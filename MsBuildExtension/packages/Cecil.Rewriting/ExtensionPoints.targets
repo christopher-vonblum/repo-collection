@@ -1,0 +1,9 @@
+<Project 
+	xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	
+	<Import Project="ExtensionPoints.tasks" />
+	
+	<Target Name="BeforePostSharpTransformation">
+		<RewritingTask OutputAssembly="$(TargetPath)" BaseIntermediateOutputPath="$(ProjectDir)$(BaseIntermediateOutputPath)$(Configuration)\" />
+	</Target>
+</Project>
