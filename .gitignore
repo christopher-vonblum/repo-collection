@@ -1,0 +1,13 @@
+bin
+obj
+.vs
+.idea
+.metadata
+.settings
+*.user
+cmake-build-debug
+*.dll
+*.exe
+*.pdb
+*.runtimeconfig.json
+*.deps.json
