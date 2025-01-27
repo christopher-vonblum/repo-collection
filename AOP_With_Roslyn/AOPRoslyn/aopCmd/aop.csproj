@@ -1,0 +1,83 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ToolCommandName>dotnet-aop</ToolCommandName>
+    <PackageId>dotnet-aop</PackageId>
+    <PackAsTool>True</PackAsTool>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>dotnet.aop</AssemblyName>
+    <Authors>Andrei Ignat</Authors>
+     <RepositoryUrl>https://github.com/ignatandrei/AOP_With_Roslyn.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    
+    <Description>Simple AOP for .NET with Roslyn
+To use 
+Install as global tool as
+
+dotnet tool install -g dotnet-aop
+
+go to your solution folder run
+
+dotnet aop
+
+For customizing , see https://github.com/ignatandrei/AOP_With_Roslyn/blob/master/AOPRoslyn/processme.txt
+
+Modify this file and run
+dotnet aop processme.txt</Description>
+    <Version>2.0.0</Version>
+    <Copyright>Andrei Ignat</Copyright>
+    <PackageLicense>MIT</PackageLicense>
+    <PackageProjectUrl>http://msprogrammer.serviciipeweb.ro/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ignatandrei/AOP_With_Roslyn/</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>AOP;Roslyn;C#</PackageTags>
+    <PackageReleaseNotes>See all releases at https://github.com/ignatandrei/AOP_With_Roslyn/releases</PackageReleaseNotes>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>dotnetaop.snk</AssemblyOriginatorKeyFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="dotnet-aop.1.0.0.nupkg" />
+    <None Remove="dotnet-aop.2.0.0.nupkg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\processme.txt" Link="processme.txt">
+      <IncludeInPackage>True</IncludeInPackage>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="InterpreterDll" Version="2018.7.13.3" />
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.2.3" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="PortableConsoleLibs" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AOPRoslyn\AOPRoslyn.csproj" />
+    <ProjectReference Include="..\AOPStatistics\AOPStatistics.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+<Project>
+
+    <UsingTask TaskName="GenericBuildExtensionAdapterTask"
+               AssemblyFile="$(SolutionDir)RewritingNetCore\bin\Release\net7.0\RewritingNetCore.dll" />
+
+
+</Project>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadFramework.Features.MsBuildExtensionsRunner", "RadFramework.Features.MsBuildExtensionsRunner\RadFramework.Features.MsBuildExtensionsRunner.csproj", "{0AB621C0-8D75-48E7-B306-37ABBDBB10C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MsBuildAdapter", "MsBuildAdapter", "{5DB4B73A-EFD7-40B6-9081-F728FF262BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadFramework.Features.MsBuildExtensionsAdapter", "RadFramework.Features.MsBuildExtensionsAdapter\RadFramework.Features.MsBuildExtensionsAdapter.csproj", "{1F185658-5875-4A6D-ACBF-BBF75035DB29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AB621C0-8D75-48E7-B306-37ABBDBB10C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB621C0-8D75-48E7-B306-37ABBDBB10C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB621C0-8D75-48E7-B306-37ABBDBB10C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB621C0-8D75-48E7-B306-37ABBDBB10C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F185658-5875-4A6D-ACBF-BBF75035DB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F185658-5875-4A6D-ACBF-BBF75035DB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F185658-5875-4A6D-ACBF-BBF75035DB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F185658-5875-4A6D-ACBF-BBF75035DB29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0AB621C0-8D75-48E7-B306-37ABBDBB10C4} = {5DB4B73A-EFD7-40B6-9081-F728FF262BC6}
+		{1F185658-5875-4A6D-ACBF-BBF75035DB29} = {5DB4B73A-EFD7-40B6-9081-F728FF262BC6}
+	EndGlobalSection
+EndGlobal

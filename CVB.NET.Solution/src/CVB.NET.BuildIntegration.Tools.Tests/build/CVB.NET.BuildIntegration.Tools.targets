@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="CVB.NET.BuildIntegration.Tools.tasks" />
+  <ItemGroup>
+    <Drive Condition=" '$(Drive)' == '' ">$([System.IO.Path]::GetPathRoot($(MSBuildProjectFullPath)))</Drive>
+  </ItemGroup>
+  
+  <Import Project="%(Drive.RootDir)CVB.NET-BuildIntegration\user.targets.user" />
+  <!--Condition="Exists('$(SolutionDir)packages\CVB.NET.Rewriting\CVB.NET.Rewriting.targets')"-->
+
+  <PropertyGroup>
+
+    <!-- Default git nuget feed -->
+    <LocalNugetFeed>G:\projects\CVB.NET-NugetFeed\</LocalNugetFeed>
+    <RemoteNugetFeed>https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/NugetFeed</RemoteNugetFeed>
+    <GitCmdLocation>C:\Program Files\Git\git-cmd.exe</GitCmdLocation>
+    <SuppressLocalNugetBuild>False</SuppressLocalNugetBuild>
+    <SuppressBuildApplicationAsNugetPackage>True</SuppressBuildApplicationAsNugetPackage>
+    <ExecuteRemoteNugetPublish>False</ExecuteRemoteNugetPublish>
+    
+  </PropertyGroup>
+
+  <!-- Overrides from CVB.NET.Rewriting user config. Ensures flawless build integration. -->
+  <Import Project="$(SolutionDir)packages\CVB.NET.Rewriting\CVB.NET.Rewriting.targets" Condition="Exists('$(SolutionDir)packages\CVB.NET.Rewriting\CVB.NET.Rewriting.targets')" />
+  
+  <!-- Overrides from solution config -->
+  <Import Project="$(SolutionDir)solution.targets" Condition="Exists('$(SolutionDir)solution.targets')" />
+
+  <!-- Overrides from project config -->
+  <Import Project="$(SolutionDir)project.targets" Condition="Exists('$(SolutionDir)project.targets.user')" />
+
+  <!-- Overrides from global user config -->
+  <Import Project="user.targets.user" Condition="Exists('user.targets.user')" />
+
+  <!-- Overrides from solution user config -->
+  <Import Project="$(SolutionDir)solution.targets.user" Condition="Exists('$(SolutionDir)solution.targets.user')" />
+
+  <!-- Overrides from project user config -->
+  <Import Project="$(SolutionDir)project.targets.user" Condition="Exists('$(SolutionDir)project.targets.user')" />
+
+  <Target Name="AfterILRewritingPostBuildHandlers">
+    <CallTarget Targets="HandleBuildLocalNugetPackages" />
+    <CallTarget Targets="HandlePublishLocalNugetPackages" />
+  </Target>
+
+  <Target Name="AfterILRewritingPostBuild">
+    <CallTarget Targets="AfterILRewritingPostBuildHandlers" />
+  </Target>
+
+  <!-- Invoke from normal post build event -->
+  <Target Name="AfterBuild" Condition="'False' == Exists('$(SolutionDir)packages\CVB.NET.Rewriting\CVB.NET.Rewriting.targets') AND 'True' != '$(InjectPostSharp30)'">
+    <CallTarget Targets="AfterILRewritingPostBuildHandlers" />
+  </Target>
+
+  <!-- Build the nuget packages depending on the flags to the local nuget feed -->
+  <Target Name="HandleBuildLocalNugetPackages">
+
+    <PropertyGroup>
+      <NugetExecutable>"$(LocalNugetFeed)nuget.exe"</NugetExecutable>
+      <FileNameIsDllAssembly>$(AssemblyName).dll</FileNameIsDllAssembly>
+      <FileNameIsExeAssembly>$(AssemblyName).exe</FileNameIsExeAssembly>
+      <_LocalNugetFeedTargetDir>$(LocalNugetFeed)$(Configuration)\</_LocalNugetFeedTargetDir>
+      <LocalNugetFeedTargetDir>"$(_LocalNugetFeedTargetDir)"</LocalNugetFeedTargetDir>
+      <NuspecProjectFileName>$(AssemblyName).nuspec</NuspecProjectFileName>
+      <LocalNugetFeedNuspecProject>"$(_LocalNugetFeedTargetDir)$(NuspecProjectFileName)"</LocalNugetFeedNuspecProject>
+      <ProjectNuspecTargetFile>$(ProjectDir)$(NuspecProjectFileName)</ProjectNuspecTargetFile>
+      <CreateAndCopyNuspecCommand>
+        $(NugetExecutable) spec "$(OutputPath)$(TargetFileName)"
+        if not exist $(LocalNugetFeedTargetDir) mkdir $(LocalNugetFeedTargetDir)
+        xcopy /y $(LocalNugetFeedNuspecProject) $(ProjectNuspecTargetFile)
+      </CreateAndCopyNuspecCommand>
+      <BuildPackageToLocalRootCommand>
+        $(NugetExecutable) pack "$(ProjectDir)$(AssemblyName).csproj" -IncludeReferencedProjects -Prop Configuration=$(Configuration)
+        xcopy /y $(LocalNugetFeedNuspecProject) $(ProjectNuspecTargetFile)
+      </BuildPackageToLocalRootCommand>
+      <CurrentNusepecProjectFile>$(ProjectDir)$(NuspecProjectFileName)</CurrentNusepecProjectFile>
+      <CurrentProjectFile>$(ProjectDir)$(AssemblyName).csproj</CurrentProjectFile>
+    </PropertyGroup>
+
+    <Exec Condition="'$(SuppressLocalNugetBuild)|$(TargetFileName)' == 'False|$(FileNameIsDllAssembly)'"
+          WorkingDirectory="$(LocalNugetFeed)"
+          ContinueOnError="false$()"
+          Command="$(CreateAndCopyNuspecCommand)" />
+
+    <Exec Condition="'$(SuppressBuildApplicationAsNugetPackage)|$(TargetFileName)' == 'False|$(FileNameIsExeAssembly)'"
+          WorkingDirectory="$(LocalNugetFeed)"
+          ContinueOnError="false"
+          Command="$(CreateAndCopyNuspecCommand)" />
+    
+    <!-- Custom generation task -->
+    <NuspecGenerationTask SolutionDirectory="$(SolutionDir)" ProjectFile="$(CurrentProjectFile)" NuspecFile="$(CurrentNusepecProjectFile)" />
+
+    <Exec Condition="'$(SuppressLocalNugetBuild)|$(TargetFileName)' == 'False|$(FileNameIsDllAssembly)'"
+          WorkingDirectory="$(LocalNugetFeed)"
+          ContinueOnError="false"
+          Command="$(BuildPackageToLocalRootCommand)" />
+
+    <Exec Condition="'$(SuppressBuildApplicationAsNugetPackage)|$(TargetFileName)' == 'False|$(FileNameIsExeAssembly)'"
+          WorkingDirectory="$(LocalNugetFeed)"
+          ContinueOnError="false"
+          Command="$(BuildPackageToLocalRootCommand)" />
+
+  </Target>
+
+  <!-- Publish the local nuget packages depending on the flags -->
+  <Target Name="HandlePublishLocalNugetPackages">
+
+
+    <PropertyGroup>
+      <PublishLocalNugetPackagesCommand>
+        "$(GitCmdLocation)" add .
+        "$(GitCmdLocation)" commit -a -m "$1";
+        "$(GitCmdLocation)" push
+      </PublishLocalNugetPackagesCommand>
+    </PropertyGroup>
+    
+    <Exec Condition="'$(ExecuteRemoteNugetPublish)' == 'True'"
+          WorkingDirectory="$(LocalNugetFeed)"
+          ContinueOnError="false"
+          Command="$(PublishLocalNugetPackagesCommand)" />
+
+  </Target>
+</Project>

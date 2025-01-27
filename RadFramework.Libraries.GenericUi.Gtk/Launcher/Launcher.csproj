@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CoreUi.Gtk\CoreUi.Gtk.csproj" />
+      <ProjectReference Include="..\CoreUi\CoreUi.csproj" />
+      <ProjectReference Include="..\Toolbox\Toolbox.csproj" />
+    </ItemGroup>
+
+</Project>

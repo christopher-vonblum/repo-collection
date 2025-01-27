@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="310" PostSharpLinesOfCode="0" EnhancedTypesCount="8" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute">
+    <Instance Declaration="#2=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IIocContainer::SetDefaultImplementationConstruction(System.Type, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@tInterface" Id="478d943cadfd7fbe">
+      <Target Target="#3=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::SetDefaultImplementationConstruction(System.Type, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@tInterface">
+        <JoinPoint Advised="#4=M:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::SetDefaultImplementationConstruction(System.Type, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)" Advising="#1" Description="#5=Validates the value passed to parameter 'tInterface'" Ordinal="32" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#6=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IIocContainer::SetDefaultImplementationConstruction(System.Type, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@construction" Id="478d943c0a8fe302">
+      <Target Target="#7=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::SetDefaultImplementationConstruction(System.Type, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@construction">
+        <JoinPoint Advised="#4" Advising="#1" Description="#8=Validates the value passed to parameter 'construction'" Ordinal="33" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#9=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IIocContainer::SetDefaultSingletonImplementationConstruction(System.Type, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@tInterface" Id="478d943c48fcd01c">
+      <Target Target="#10=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::SetDefaultSingletonImplementationConstruction(System.Type, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@tInterface">
+        <JoinPoint Advised="#11=M:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::SetDefaultSingletonImplementationConstruction(System.Type, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)" Advising="#1" Description="#5" Ordinal="34" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#12=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IIocContainer::SetDefaultSingletonImplementationConstruction(System.Type, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@construction" Id="478d943c8df6e49f">
+      <Target Target="#13=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::SetDefaultSingletonImplementationConstruction(System.Type, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@construction">
+        <JoinPoint Advised="#11" Advising="#1" Description="#8" Ordinal="35" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#14=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IIocContainer::SetNamedSingletonImplementationConstruction(System.Type, System.String, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@tInterface" Id="478d943c4fb11e01">
+      <Target Target="#15=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::SetNamedSingletonImplementationConstruction(System.Type, System.String, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@tInterface">
+        <JoinPoint Advised="#16=M:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::SetNamedSingletonImplementationConstruction(System.Type, System.String, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)" Advising="#1" Description="#5" Ordinal="36" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#17=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IIocContainer::SetNamedSingletonImplementationConstruction(System.Type, System.String, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@construction" Id="478d943c069460f4">
+      <Target Target="#18=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::SetNamedSingletonImplementationConstruction(System.Type, System.String, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@construction">
+        <JoinPoint Advised="#16" Advising="#1" Description="#8" Ordinal="38" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#19=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IReadOnlyIocContainer::GetDefaultImplementationConstruction(System.Type)@tInterface" Id="478d943c5550f89c">
+      <Target Target="#20=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::GetDefaultImplementationConstruction(System.Type)@tInterface">
+        <JoinPoint Advised="#21=M:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::GetDefaultImplementationConstruction(System.Type)" Advising="#1" Description="#5" Ordinal="28" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#22=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IReadOnlyIocContainer::GetDefaultSingletonImplementationConstruction(System.Type)@tInterface" Id="478d943c3996bb49">
+      <Target Target="#23=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::GetDefaultSingletonImplementationConstruction(System.Type)@tInterface">
+        <JoinPoint Advised="#24=M:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::GetDefaultSingletonImplementationConstruction(System.Type)" Advising="#1" Description="#5" Ordinal="29" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#25=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IReadOnlyIocContainer::GetNamedSingletonImplementationConstruction(System.Type, System.String)@tInterface" Id="478d943c9ba67fe0">
+      <Target Target="#26=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::GetNamedSingletonImplementationConstruction(System.Type, System.String)@tInterface">
+        <JoinPoint Advised="#27=M:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::GetNamedSingletonImplementationConstruction(System.Type, System.String)" Advising="#1" Description="#5" Ordinal="30" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#28=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IReadOnlyIocContainer::IsImplementationConstructionRegistered(System.Type)@tInterface" Id="478d943ceaa7e5f5">
+      <Target Target="#29=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::IsImplementationConstructionRegistered(System.Type)@tInterface">
+        <JoinPoint Advised="#30=M:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::IsImplementationConstructionRegistered(System.Type)" Advising="#1" Description="#5" Ordinal="39" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#31=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IReadOnlyIocContainer::IsDefaultSingletonConstructionRegistered(System.Type)@tInterface" Id="478d943ca8863c2a">
+      <Target Target="#32=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::IsDefaultSingletonConstructionRegistered(System.Type)@tInterface">
+        <JoinPoint Advised="#33=M:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::IsDefaultSingletonConstructionRegistered(System.Type)" Advising="#1" Description="#5" Ordinal="40" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#34=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IReadOnlyIocContainer::IsNamedSingletonConstructionRegistered(System.Type, System.String)@tInterface" Id="478d943c5de73df0">
+      <Target Target="#35=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::IsNamedSingletonConstructionRegistered(System.Type, System.String)@tInterface">
+        <JoinPoint Advised="#36=M:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::IsNamedSingletonConstructionRegistered(System.Type, System.String)" Advising="#1" Description="#5" Ordinal="41" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#37=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.ContextScope{TOverrideInterface}::#ctor(System.Type, TOverrideInterface, System.String)@contextValue" Id="478d943c1e68e6f0">
+      <Target>
+        <JoinPoint Advised="#38=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.ContextScope{TOverrideInterface}::#ctor(System.Type, TOverrideInterface, System.String)" Advising="#1" Description="#39=Validates the value passed to parameter 'contextValue'" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#40=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.ContextScope{TOverrideInterface}::#ctor(System.Type, TOverrideInterface, System.String)@overrideSingletonKey" Id="478d943c3d6e7cd9">
+      <Target>
+        <JoinPoint Advised="#38" Advising="#1" Description="#41=Validates the value passed to parameter 'overrideSingletonKey'" Ordinal="2" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#42=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::CreateInstance(System.Type)@tInterface" Id="478d943c09bea605">
+      <Target Target="#43=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::CreateInstance(System.Type)@tInterface">
+        <JoinPoint Advised="#44=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::CreateInstance(System.Type)" Advising="#1" Description="#5" Ordinal="5" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#45=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::GetDefaultSingletonInstance(System.Type)@tInterface" Id="478d943c36e8e690">
+      <Target Target="#46=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::GetDefaultSingletonInstance(System.Type)@tInterface">
+        <JoinPoint Advised="#47=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::GetDefaultSingletonInstance(System.Type)" Advising="#1" Description="#5" Ordinal="6" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#48=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::GetNamedSingletonInstance(System.Type, System.String)@tInterface" Id="478d943ced97b00b">
+      <Target Target="#49=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProvider::GetNamedSingletonInstance(System.Type, System.String)@tInterface">
+        <JoinPoint Advised="#50=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProvider::GetNamedSingletonInstance(System.Type, System.String)" Advising="#1" Description="#5" Ordinal="43" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#51=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::PushDefaultContextSingletonInstance(System.Type, System.Object)@tInterface" Id="478d943c05cf9d97">
+      <Target Target="#52=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::PushDefaultContextSingletonInstance(System.Type, System.Object)@tInterface">
+        <JoinPoint Advised="#53=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::PushDefaultContextSingletonInstance(System.Type, System.Object)" Advising="#1" Description="#5" Ordinal="8" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#54=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::PushDefaultContextSingletonInstance(System.Type, System.Object)@instance" Id="478d943cc3b1aca8">
+      <Target Target="#55=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::PushDefaultContextSingletonInstance(System.Type, System.Object)@instance">
+        <JoinPoint Advised="#53" Advising="#1" Description="#56=Validates the value passed to parameter 'instance'" Ordinal="9" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#57=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::PushDefaultContextSingletonInstance{TInterface}(TInterface)@instance" Id="478d943cffe19ea2">
+      <Target Target="#58=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::PushDefaultContextSingletonInstance{TInterface}(TInterface)@instance">
+        <JoinPoint Advised="#59=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::PushDefaultContextSingletonInstance{TInterface}(TInterface)" Advising="#1" Description="#56" Ordinal="10" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#60=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::PopDefaultContextSingletonInstance(System.Type)@tInterface" Id="478d943ce9034711">
+      <Target Target="#61=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::PopDefaultContextSingletonInstance(System.Type)@tInterface">
+        <JoinPoint Advised="#62=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::PopDefaultContextSingletonInstance(System.Type)" Advising="#1" Description="#5" Ordinal="11" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#63=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::PushNamedContextSingletonInstance(System.Type, System.String, System.Object)@tInterface" Id="478d943c3cd3fc93">
+      <Target Target="#64=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProvider::PushNamedContextSingletonInstance(System.Type, System.String, System.Object)@tInterface">
+        <JoinPoint Advised="#65=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProvider::PushNamedContextSingletonInstance(System.Type, System.String, System.Object)" Advising="#1" Description="#5" Ordinal="45" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#66=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::PushNamedContextSingletonInstance(System.Type, System.String, System.Object)@instance" Id="478d943c7dedf3ca">
+      <Target Target="#67=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProvider::PushNamedContextSingletonInstance(System.Type, System.String, System.Object)@instance">
+        <JoinPoint Advised="#65" Advising="#1" Description="#56" Ordinal="47" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#68=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::PushNamedContextSingletonInstance{TInterface}(System.String, TInterface)@instance" Id="478d943c86888a32">
+      <Target Target="#69=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::PushNamedContextSingletonInstance{TInterface}(System.String, TInterface)@instance">
+        <JoinPoint Advised="#70=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::PushNamedContextSingletonInstance{TInterface}(System.String, TInterface)" Advising="#1" Description="#56" Ordinal="13" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#71=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::PopNamedSingletonInstance(System.Type, System.String)@tInterface" Id="478d943c06356716">
+      <Target Target="#72=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProvider::PopNamedSingletonInstance(System.Type, System.String)@tInterface">
+        <JoinPoint Advised="#73=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProvider::PopNamedSingletonInstance(System.Type, System.String)" Advising="#1" Description="#5" Ordinal="48" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#74=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::#ctor([CVB.NET.Ioc]CVB.NET.Ioc.Container.IReadOnlyIocContainer)@iocContainer" Id="478d943ca4558c30">
+      <Target>
+        <JoinPoint Advised="#75=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::#ctor([CVB.NET.Ioc]CVB.NET.Ioc.Container.IReadOnlyIocContainer)" Advising="#1" Description="#76=Validates the value passed to parameter 'iocContainer'" Ordinal="3" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#77=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::CreateInstance([CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@implementationConstruction" Id="478d943ca3a71d33">
+      <Target>
+        <JoinPoint Advised="#78=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::CreateInstance([CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)" Advising="#1" Description="#79=Validates the value passed to parameter 'implementationConstruction'" Ordinal="4" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#80=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocSingletonInstanceContainer::#ctor(System.Object)@sharedInstance" Id="478d943c715bae33">
+      <Target>
+        <JoinPoint Advised="#81=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocSingletonInstanceContainer::#ctor(System.Object)" Advising="#1" Description="#82=Validates the value passed to parameter 'sharedInstance'" Ordinal="15" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#83=R:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo, System.Collections.Generic.IList{[mscorlib]System.Type}, System.Collections.Generic.Dictionary{System.String,System.Object})@type" Id="478d943c6f724c05">
+      <Target>
+        <JoinPoint Advised="#84=M:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo, System.Collections.Generic.IList{[mscorlib]System.Type}, System.Collections.Generic.Dictionary{System.String,System.Object})" Advising="#1" Description="#85=Validates the value passed to parameter 'type'" Ordinal="16" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#86=R:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo, System.Collections.Generic.IList{[mscorlib]System.Type}, System.Collections.Generic.Dictionary{System.String,System.Object})@selectedConstructor" Id="478d943cbb5c83d8">
+      <Target>
+        <JoinPoint Advised="#84" Advising="#1" Description="#87=Validates the value passed to parameter 'selectedConstructor'" Ordinal="17" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#88=R:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo, System.Collections.Generic.IList{[mscorlib]System.Type}, System.Collections.Generic.Dictionary{System.String,System.Object})@typeArguments" Id="478d943ca7a5e811">
+      <Target>
+        <JoinPoint Advised="#84" Advising="#1" Description="#89=Validates the value passed to parameter 'typeArguments'" Ordinal="18" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#90=R:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo, System.Collections.Generic.IList{[mscorlib]System.Type}, System.Collections.Generic.Dictionary{System.String,System.Object})@constructorArguments" Id="478d943c7a178015">
+      <Target>
+        <JoinPoint Advised="#84" Advising="#1" Description="#91=Validates the value passed to parameter 'constructorArguments'" Ordinal="19" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#92=R:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo, System.Collections.Generic.IList{[mscorlib]System.Type}, System.Collections.Generic.Dictionary{[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedParameterInfo,System.Object})@type" Id="478d943cce1a245c">
+      <Target>
+        <JoinPoint Advised="#93=M:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo, System.Collections.Generic.IList{[mscorlib]System.Type}, System.Collections.Generic.Dictionary{[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedParameterInfo,System.Object})" Advising="#1" Description="#85" Ordinal="20" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#94=R:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo, System.Collections.Generic.IList{[mscorlib]System.Type}, System.Collections.Generic.Dictionary{[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedParameterInfo,System.Object})@selectedConstructor" Id="478d943cf5cd2550">
+      <Target>
+        <JoinPoint Advised="#93" Advising="#1" Description="#87" Ordinal="21" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#95=R:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo, System.Collections.Generic.IList{[mscorlib]System.Type}, System.Collections.Generic.Dictionary{[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedParameterInfo,System.Object})@typeArguments" Id="478d943c3a4bce18">
+      <Target>
+        <JoinPoint Advised="#93" Advising="#1" Description="#89" Ordinal="22" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#96=R:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo, System.Collections.Generic.IList{[mscorlib]System.Type}, System.Collections.Generic.Dictionary{[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedParameterInfo,System.Object})@constructorArguments" Id="478d943c83bb0f53">
+      <Target>
+        <JoinPoint Advised="#93" Advising="#1" Description="#91" Ordinal="23" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#97=R:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, System.Collections.Generic.IDictionary{System.String,System.Object}, System.Collections.Generic.IList{[mscorlib]System.Type})@type" Id="478d943c9ccf9ddc">
+      <Target>
+        <JoinPoint Advised="#98=M:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, System.Collections.Generic.IDictionary{System.String,System.Object}, System.Collections.Generic.IList{[mscorlib]System.Type})" Advising="#1" Description="#85" Ordinal="24" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#99=R:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, System.Collections.Generic.IDictionary{System.String,System.Object}, System.Collections.Generic.IList{[mscorlib]System.Type})@arguments" Id="478d943c312b82f0">
+      <Target>
+        <JoinPoint Advised="#98" Advising="#1" Description="#100=Validates the value passed to parameter 'arguments'" Ordinal="25" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#101=R:[CVB.NET.Ioc]CVB.NET.Ioc.Model.ImplementationConstruction::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, System.Collections.Generic.IDictionary{System.String,System.Object}, System.Collections.Generic.IList{[mscorlib]System.Type})@typeArguments" Id="478d943c032c433a">
+      <Target>
+        <JoinPoint Advised="#98" Advising="#1" Description="#89" Ordinal="26" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#102=R:[CVB.NET.Ioc]CVB.NET.Ioc.Model.InterfaceDefinition::#ctor(System.Type)@interfaceType" Id="478d943c5a7d174e">
+      <Target>
+        <JoinPoint Advised="#103=M:[CVB.NET.Ioc]CVB.NET.Ioc.Model.InterfaceDefinition::#ctor(System.Type)" Advising="#1" Description="#104=Validates the value passed to parameter 'interfaceType'" Ordinal="27" LinesAvoided="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#105=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute">
+    <Instance Declaration="#106=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IIocContainer::SetNamedSingletonImplementationConstruction(System.Type, System.String, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@singletonKey" Id="478d943c90e1e6ac">
+      <Target Target="#107=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::SetNamedSingletonImplementationConstruction(System.Type, System.String, [CVB.NET.Ioc]CVB.NET.Ioc.Model.IImplementationConstruction)@singletonKey">
+        <JoinPoint Advised="#16" Advising="#105" Description="#108=Validates the value passed to parameter 'singletonKey'" Ordinal="37" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#109=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IReadOnlyIocContainer::GetNamedSingletonImplementationConstruction(System.Type, System.String)@singletonKey" Id="478d943c8f4fefd2">
+      <Target Target="#110=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::GetNamedSingletonImplementationConstruction(System.Type, System.String)@singletonKey">
+        <JoinPoint Advised="#27" Advising="#105" Description="#108" Ordinal="31" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#111=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IReadOnlyIocContainer::IsNamedSingletonConstructionRegistered(System.Type, System.String)@singletonKey" Id="478d943cf6d98387">
+      <Target Target="#112=R:[CVB.NET.Ioc]CVB.NET.Ioc.Container.IocContainer::IsNamedSingletonConstructionRegistered(System.Type, System.String)@singletonKey">
+        <JoinPoint Advised="#36" Advising="#105" Description="#108" Ordinal="42" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#113=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::GetNamedSingletonInstance(System.Type, System.String)@singletonKey" Id="478d943c38ff9f20">
+      <Target Target="#114=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProvider::GetNamedSingletonInstance(System.Type, System.String)@singletonKey">
+        <JoinPoint Advised="#50" Advising="#105" Description="#108" Ordinal="44" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#115=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::GetNamedSingletonInstance{TInterface}(System.String)@singletonKey" Id="478d943ccf062a5f">
+      <Target Target="#116=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::GetNamedSingletonInstance{TInterface}(System.String)@singletonKey">
+        <JoinPoint Advised="#117=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::GetNamedSingletonInstance{TInterface}(System.String)" Advising="#105" Description="#108" Ordinal="7" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#118=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::PushNamedContextSingletonInstance(System.Type, System.String, System.Object)@singletonKey" Id="478d943ced3d3ed4">
+      <Target Target="#119=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProvider::PushNamedContextSingletonInstance(System.Type, System.String, System.Object)@singletonKey">
+        <JoinPoint Advised="#65" Advising="#105" Description="#108" Ordinal="46" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#120=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::PushNamedContextSingletonInstance{TInterface}(System.String, TInterface)@singletonKey" Id="478d943c6c7e28ea">
+      <Target Target="#121=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::PushNamedContextSingletonInstance{TInterface}(System.String, TInterface)@singletonKey">
+        <JoinPoint Advised="#70" Advising="#105" Description="#108" Ordinal="12" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#122=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::PopNamedSingletonInstance(System.Type, System.String)@singletonKey" Id="478d943cd0e7c924">
+      <Target Target="#123=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProvider::PopNamedSingletonInstance(System.Type, System.String)@singletonKey">
+        <JoinPoint Advised="#73" Advising="#105" Description="#108" Ordinal="49" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#124=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IIocProvider::PopContextSingletonInstance{TInterface}(System.String)@singletonKey" Id="478d943c5a93a622">
+      <Target Target="#125=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::PopContextSingletonInstance{TInterface}(System.String)@singletonKey">
+        <JoinPoint Advised="#126=M:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.IocProviderBase::PopContextSingletonInstance{TInterface}(System.String)" Advising="#105" Description="#108" Ordinal="14" LinesAvoided="4" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#127=T:[CVB.NET.Reflection.Aspects]CVB.NET.Reflection.Aspects.ParameterValidation.IsStaticAttribute">
+    <Instance Declaration="#128=R:[CVB.NET.Ioc]CVB.NET.Ioc.Provider.ContextScope{TOverrideInterface}::#ctor(System.Type, TOverrideInterface, System.String)@staticContext" Id="478d943c73aca787">
+      <Target>
+        <JoinPoint Advised="#38" Advising="#127" Description="#129=Validates the value passed to parameter 'staticContext'" Ordinal="0" LinesAvoided="1" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#130=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute::ValidateValue(System.Object, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#131=2" Description="#132=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#133=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute::ValidateValueString(System.String, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#131" Description="#132" />
+  <Annotation Target="#134=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute::ValidateValueCollection(System.Collections.ICollection, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#131" Description="#132" />
+</Symbols>

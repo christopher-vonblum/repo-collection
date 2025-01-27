@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Description>
+      ** C# 9.0 ONLY **
+      Autogenerates for EF Data2Code
+      Add also Nuget package AOPEFGenerator
+      You can have your own template - read the readme.txt
+    </Description>
+    <Version>2021.1.25.2030</Version>
+    <Authors>Andrei Ignat</Authors>
+    <PackageTags>RoslynCodeGenerators;C#;CSharp;</PackageTags>
+    <PackageProjectUrl>https://github.com/ignatandrei/AOP_With_Roslyn/tree/master/AOPMethods</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ignatandrei/AOP_With_Roslyn</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>MIT</Copyright>
+
+  </PropertyGroup>
+
+</Project>

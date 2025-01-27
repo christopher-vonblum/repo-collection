@@ -1,0 +1,11 @@
+--- Makefile
++++ Makefile
+@@ -2616,7 +2616,7 @@
+ 		   autoconf -o configure configure.ac+ && \
+ 		   $(RM) configure.ac+
+ 
+-configure: configure.ac GIT-VERSION-FILE
++configure: configure.ac
+ 	$(QUIET_GEN)$(CONFIGURE_RECIPE)
+ 
+ ifdef AUTOCONFIGURED

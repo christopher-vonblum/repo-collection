@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="426" PostSharpLinesOfCode="0" EnhancedTypesCount="5" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute">
+    <Instance Declaration="#2=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Exception.CrudRepositoryException::#ctor(System.Exception)@innerException" Id="de117d6113d93fc1">
+      <Target>
+        <JoinPoint Advised="#3=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.Exception.CrudRepositoryException::#ctor(System.Exception)" Advising="#1" Description="#4=Validates the value passed to parameter 'innerException'" Ordinal="0" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#5=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.IReadOnlyRepository{TScheme,TOrmTypeView}::Read(System.Collections.Generic.IDictionary{System.String,System.Object}, TScheme)@identifierProperties" Id="de117d613ca6e732">
+      <Target Target="#6=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Read(System.Collections.Generic.IDictionary{System.String,System.Object}, TScheme)@identifierProperties">
+        <JoinPoint Advised="#7=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Read(System.Collections.Generic.IDictionary{System.String,System.Object}, TScheme)" Advising="#1" Description="#8=Validates the value passed to parameter 'identifierProperties'" Ordinal="9" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#9=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.IReadOnlyRepository{TScheme,TOrmTypeView}::Read(System.Type, System.Collections.Generic.IDictionary{System.String,System.Object}, TScheme)@tModel" Id="de117d61af06d55e">
+      <Target Target="#10=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Read(System.Type, System.Collections.Generic.IDictionary{System.String,System.Object}, TScheme)@tModel">
+        <JoinPoint Advised="#11=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Read(System.Type, System.Collections.Generic.IDictionary{System.String,System.Object}, TScheme)" Advising="#1" Description="#12=Validates the value passed to parameter 'tModel'" Ordinal="10" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#13=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.IReadOnlyRepository{TScheme,TOrmTypeView}::Read{TModel}(TModel)@model" Id="de117d617f984693">
+      <Target Target="#14=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Read{TModel}(TModel)@model">
+        <JoinPoint Advised="#15=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Read{TModel}(TModel)" Advising="#1" Description="#16=Validates the value passed to parameter 'model'" Ordinal="7" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#17=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.IReadOnlyRepository{TScheme,TOrmTypeView}::Exists(System.Collections.Generic.IDictionary{System.String,System.Object}, TScheme)@identifierProperties" Id="de117d619a6eab36">
+      <Target Target="#18=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Exists(System.Collections.Generic.IDictionary{System.String,System.Object}, TScheme)@identifierProperties">
+        <JoinPoint Advised="#19=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Exists(System.Collections.Generic.IDictionary{System.String,System.Object}, TScheme)" Advising="#1" Description="#8" Ordinal="11" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#20=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.IReadOnlyRepository{TScheme,TOrmTypeView}::Exists(System.Type, System.Collections.Generic.IDictionary{System.String,System.Object}, TScheme)@tModel" Id="de117d61058964c0">
+      <Target Target="#21=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Exists(System.Type, System.Collections.Generic.IDictionary{System.String,System.Object}, TScheme)@tModel">
+        <JoinPoint Advised="#22=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Exists(System.Type, System.Collections.Generic.IDictionary{System.String,System.Object}, TScheme)" Advising="#1" Description="#12" Ordinal="12" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#23=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.IReadOnlyRepository{TScheme,TOrmTypeView}::Exists{TModel}(TModel)@model" Id="de117d61d140980b">
+      <Target Target="#24=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Exists{TModel}(TModel)@model">
+        <JoinPoint Advised="#25=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Exists{TModel}(TModel)" Advising="#1" Description="#16" Ordinal="8" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#26=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.GenericModel.DictionaryExtensions::MergeLeft{TDictionary,TKey,TValue}(TDictionary, System.Collections.Generic.IDictionary{TKey,TValue}[])@dictionary" Id="de117d616531ea52">
+      <Target>
+        <JoinPoint Advised="#27=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.GenericModel.DictionaryExtensions::MergeLeft{TDictionary,TKey,TValue}(TDictionary, System.Collections.Generic.IDictionary{TKey,TValue}[])" Advising="#1" Description="#28=Validates the value passed to parameter 'dictionary'" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#29=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.GenericModel.GenericModelImplementation{TOrmTypeView}::#ctor(System.Object, System.Collections.Generic.IDictionary{[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo,System.Object})@model" Id="de117d61cd5c864e">
+      <Target>
+        <JoinPoint Advised="#30=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.GenericModel.GenericModelImplementation{TOrmTypeView}::#ctor(System.Object, System.Collections.Generic.IDictionary{[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo,System.Object})" Advising="#1" Description="#16" Ordinal="3" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#31=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.GenericModel.GenericModelImplementation{TOrmTypeView}::#ctor(System.Object, System.Collections.Generic.IDictionary{[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo,System.Object})@properties" Id="de117d61c8c0e1d4">
+      <Target>
+        <JoinPoint Advised="#30" Advising="#1" Description="#32=Validates the value passed to parameter 'properties'" Ordinal="4" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#33=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.GenericModel.GenericModelImplementation{TOrmTypeView}::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, System.Collections.Generic.IDictionary{[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo,System.Object})@type" Id="de117d618f1375f2">
+      <Target>
+        <JoinPoint Advised="#34=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.GenericModel.GenericModelImplementation{TOrmTypeView}::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, System.Collections.Generic.IDictionary{[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo,System.Object})" Advising="#1" Description="#35=Validates the value passed to parameter 'type'" Ordinal="5" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#36=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.GenericModel.GenericModelImplementation{TOrmTypeView}::#ctor(CVB.NET.Reflection.Caching.Cached.CachedType, System.Collections.Generic.IDictionary{[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo,System.Object})@properties" Id="de117d614da3906b">
+      <Target>
+        <JoinPoint Advised="#34" Advising="#1" Description="#32" Ordinal="6" LinesAvoided="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#37=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute">
+    <Instance Declaration="#38=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.GenericModel.DictionaryExtensions::MergeLeft{TDictionary,TKey,TValue}(TDictionary, System.Collections.Generic.IDictionary{TKey,TValue}[])@others" Id="de117d61b2c3b7d9">
+      <Target>
+        <JoinPoint Advised="#27" Advising="#37" Description="#39=Validates the value passed to parameter 'others'" Ordinal="2" LinesAvoided="4" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#40=T:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Aspect.ReflectionViewAspect">
+    <Instance Declaration="#41=A:CVB.NET.Reflection.Caching" ForwardRef="true" Id="9269406e051832cd">
+      <Target Target="#42=T:[CVB.NET.DataAccess]CVB.NET.DataAccess.MetaData.Views.OrmTypeMetaDataViewBase">
+        <JoinPoint Advised="#43=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.MetaData.Views.OrmTypeMetaDataViewBase::get_BaseModel()" Description="#44=Intercepted by advice OnPropertyGet" Semantic="Getter" Ordinal="13" LinesAvoided="2" />
+        <JoinPoint Advised="#45=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.MetaData.Views.OrmTypeMetaDataViewBase::get_HasBaseModel()" Description="#44" Semantic="Getter" Ordinal="15" LinesAvoided="2" />
+        <JoinPoint Advised="#46=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.MetaData.Views.OrmTypeMetaDataViewBase::get_DeclaredForeignModelReferences()" Description="#44" Semantic="Getter" Ordinal="17" LinesAvoided="2" />
+        <JoinPoint Advised="#47=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.MetaData.Views.OrmTypeMetaDataViewBase::get_DeclaredPrimitiveValueProperties()" Description="#44" Semantic="Getter" Ordinal="19" LinesAvoided="2" />
+        <JoinPoint Advised="#48=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.MetaData.Views.OrmTypeMetaDataViewBase::get_PrimaryKeyProperties()" Description="#44" Semantic="Getter" Ordinal="21" LinesAvoided="2" />
+        <JoinPoint Advised="#49=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.MetaData.Views.OrmTypeMetaDataViewBase::get_PrimitiveValueProperties()" Description="#44" Semantic="Getter" Ordinal="23" LinesAvoided="2" />
+        <JoinPoint Advised="#50=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.MetaData.Views.OrmTypeMetaDataViewBase::get_ForeignModelReferences()" Description="#44" Semantic="Getter" Ordinal="25" LinesAvoided="2" />
+        <JoinPoint Advised="#51=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.MetaData.Views.OrmTypeMetaDataViewBase::get_MandatoryProperties()" Description="#44" Semantic="Getter" Ordinal="27" LinesAvoided="2" />
+        <JoinPoint Advised="#52=M:[CVB.NET.DataAccess]CVB.NET.DataAccess.MetaData.Views.OrmTypeMetaDataViewBase::get_ColumnProperties()" Description="#44" Semantic="Getter" Ordinal="29" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#41" ForwardRef="true" Id="9269406ec646bd3f">
+      <Target Target="#42">
+        <JoinPoint Advised="#43" Description="#44" Semantic="Getter" Ordinal="14" LinesAvoided="2" />
+        <JoinPoint Advised="#45" Description="#44" Semantic="Getter" Ordinal="16" LinesAvoided="2" />
+        <JoinPoint Advised="#46" Description="#44" Semantic="Getter" Ordinal="18" LinesAvoided="2" />
+        <JoinPoint Advised="#47" Description="#44" Semantic="Getter" Ordinal="20" LinesAvoided="2" />
+        <JoinPoint Advised="#48" Description="#44" Semantic="Getter" Ordinal="22" LinesAvoided="2" />
+        <JoinPoint Advised="#49" Description="#44" Semantic="Getter" Ordinal="24" LinesAvoided="2" />
+        <JoinPoint Advised="#50" Description="#44" Semantic="Getter" Ordinal="26" LinesAvoided="2" />
+        <JoinPoint Advised="#51" Description="#44" Semantic="Getter" Ordinal="28" LinesAvoided="2" />
+        <JoinPoint Advised="#52" Description="#44" Semantic="Getter" Ordinal="30" LinesAvoided="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#53=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute::ValidateValue(System.Object, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#54=2" Description="#55=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#56=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute::ValidateValueString(System.String, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#54" Description="#55" />
+  <Annotation Target="#57=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute::ValidateValueCollection(System.Collections.ICollection, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#54" Description="#55" />
+  <Annotation Target="#58=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Aspect.ReflectionViewAspect::OnPropertyGet(PostSharp.Aspects.LocationInterceptionArgs)" Arguments="#54" Description="#55" />
+</Symbols>

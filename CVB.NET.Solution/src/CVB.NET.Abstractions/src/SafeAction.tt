@@ -1,0 +1,178 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+namespace CVB.NET.Architecture
+{
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+<#
+int argCount = 17;
+
+for (int i = 1; i < argCount; i++)
+{ 
+	string TArgs = GetGenericParametersString(i);
+	string invokeArgs = GetParametersString(i); #>
+	
+	public class SafeAction<<#=TArgs#>> : IEquatable<SafeAction<<#=TArgs#>>>
+	{
+		private readonly List<Action<<#=TArgs#>>> handlers = new List<Action<<#=TArgs#>>>();
+
+		public SafeAction()
+		{
+		}
+
+		public SafeAction(IEnumerable<Action<<#=TArgs#>>> handlers)
+		{
+			if(handlers == null)
+			{
+				throw new ArgumentNullException(nameof(handlers));
+			}
+
+			this.handlers = handlers.ToList();
+		}
+
+		public static SafeAction<<#=TArgs#>> operator +(SafeAction<<#=TArgs#>> a, Action<<#=TArgs#>> b)
+		{
+			lock (a.handlers)
+			{
+				a.handlers.Add(b);
+			}
+
+			return a;
+		}
+
+		public static SafeAction<<#=TArgs#>> operator -(SafeAction<<#=TArgs#>> a, Action<<#=TArgs#>> b)
+		{
+			lock (a.handlers)
+			{
+				a.handlers.Remove(b);
+			}
+
+			return a;
+		}
+
+		public static SafeAction<<#=TArgs#>> operator +(SafeAction<<#=TArgs#>> a, SafeAction<<#=TArgs#>> b)
+		{
+			SafeAction<<#=TArgs#>> newAction;
+			
+			lock (a.handlers)
+			{
+				newAction = new SafeAction<<#=TArgs#>>(a.handlers.Concat(b.handlers));
+			}
+
+			return newAction;
+		}
+
+		public static SafeAction<<#=TArgs#>> operator -(SafeAction<<#=TArgs#>> a, SafeAction<<#=TArgs#>> b)
+		{
+			SafeAction<<#=TArgs#>> newAction;
+			
+			lock (a.handlers)
+			{
+				newAction = new SafeAction<<#=TArgs#>>(a.handlers.Concat(b.handlers));
+			}
+			
+			newAction.handlers.RemoveAll(h => b.handlers.Contains(h));
+			
+			return a;
+		}
+
+		public void Invoke(<#=invokeArgs#>)
+		{
+			List<Exception> handlerExceptions = new List<Exception>();
+
+			foreach (var handler in handlers)
+			{
+				try
+				{
+					handler(<#=GetArgumentsString(i)#>);
+				}
+				catch (Exception ex)
+				{
+					handlerExceptions.Add(ex);
+				}
+			}
+
+			if (handlerExceptions.Any())
+			{
+				throw new AggregateException(handlerExceptions);
+			}
+		}
+
+		public override bool Equals(object obj)
+		{
+			return obj is SafeAction<<#=TArgs#>> && Equals((SafeAction<<#=TArgs#>>)obj);
+		}
+
+		public bool Equals(SafeAction<<#=TArgs#>> action)
+		{
+			return action != null && handlers.All(h => action.handlers.Contains(h));
+		}
+
+		public override int GetHashCode()
+		{
+			return handlers.Aggregate(1, (current, h) => current ^ h.GetHashCode());
+		}
+
+		public static bool operator ==(SafeAction<<#=TArgs#>> x, SafeAction<<#=TArgs#>> y)
+		{
+			return x != null && x.Equals(y);
+		}
+
+		public static bool operator !=(SafeAction<<#=TArgs#>> x, SafeAction<<#=TArgs#>> y)
+		{
+			return !(x == y);
+		}
+	}
+<#
+} #>
+}
+<#+ string GetArgumentsString(int argCount)
+    {
+        return string.Join(", ", GetArgNames(argCount));
+    }
+
+    string GetParametersString(int argCount)
+    {
+        string[] argTypes = GetArgTypes(argCount);
+
+		List<string> parameters = new List<string>();
+
+		for (int i = 0; i < argCount; i++)
+        {
+			parameters.Add(argTypes[i] + " arg" + (i + 1));
+        }
+
+		return string.Join(", ", parameters);
+    }
+
+	string GetGenericParametersString(int argCount)
+    {
+        return string.Join(", ", GetArgTypes(argCount));
+    }
+
+    string[] GetArgNames(int argCount)
+    {
+		List<string> arguments = new List<string>();
+
+		for (int i = 0; i < argCount; i++)
+        {
+			arguments.Add("arg" + (i + 1));
+        }
+
+        return arguments.ToArray();
+    }
+
+    string[] GetArgTypes(int argCount)
+    {
+        List<string> argTypes = new List<string>();
+
+        for (int i = 0; i < argCount; i++)
+        {
+			argTypes.Add("TArg" + (i + 1));
+        }
+
+        return argTypes.ToArray();
+    } #>

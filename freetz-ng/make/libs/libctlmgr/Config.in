@@ -1,0 +1,38 @@
+config FREETZ_LIB_libctlmgr
+	bool "libctlmgr (libctlmgr.so)"
+	depends on FREETZ_AVM_HAS_AVMCTLMGR_PRELOAD
+	select FREETZ_LIB_libctlmgr_WITH_CHMOD   if FREETZ_AVM_VERSION_07_0X_MIN
+	select FREETZ_LIB_libctlmgr_WITH_RENAME  if FREETZ_AVM_VERSION_07_1X_MAX && FREETZ_AVM_HAS_USB_HOST
+	default n
+	help
+		This is Freetz compatibility library which overwrites
+		functions of AVM's libraries, e.g. write_etc_passwd.
+
+if FREETZ_LIB_libctlmgr
+
+	config FREETZ_LIB_libctlmgr_WITH_DEBUG
+		bool "With DEBUG - DEVELOPER"
+		depends on FREETZ_SHOW_DEVELOPER
+		default n
+		help
+			Show some debug output on console.
+			Do not enable it if you dont know a reason.
+
+	config FREETZ_LIB_libctlmgr_WITH_CHMOD
+		bool "With CHMOD"
+		depends on FREETZ_AVM_VERSION_07_0X_MIN
+		default n
+		help
+			Alters chmod() for /var/tmp directory.
+			Used to keep filesystem permissions.
+
+	config FREETZ_LIB_libctlmgr_WITH_RENAME
+		bool "With RENAME"
+		depends on FREETZ_AVM_VERSION_07_1X_MAX && FREETZ_AVM_HAS_USB_HOST
+		default n
+		help
+			Alters rename() for /etc/passwd file.
+			Used to keep freetz users.
+
+endif # FREETZ_LIB_libctlmgr
+

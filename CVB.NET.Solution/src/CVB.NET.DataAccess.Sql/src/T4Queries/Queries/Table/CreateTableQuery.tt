@@ -1,0 +1,27 @@
+﻿<#@ template debug="true" inherits="CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase<ITableDescription>" language="C#" #>
+<#@ output extension=".sql" #>
+<#/*Imports*/#>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Queries.Utils" #>
+
+<#/*Create Table*/#>
+<# if(Description.Columns.Any())
+   { #>
+		CREATE TABLE [<#= Description.Schema #>].[<#= Description.Table #>]
+		(
+		 <# foreach(IColumnDescription columnDescription in Description.Columns)
+			{ #>
+				[<#= columnDescription.Name #>] <#= columnDescription.Type #> <# if(!columnDescription.AllowNull) { Write("NOT"); } #> NULL,
+		 <# } #>
+		);
+<# } #>
+<#/*Set Primary Keys*/#>
+<# if(Description.OrmTypeMetaDataView.TablePrimaryKeyDescriptions.Any())
+   { #>
+		ALTER TABLE [<#= Description.Schema #>].[<#= Description.Table #>] ADD CONSTRAINT [PK___TABLE_<#= Description.Table #>]
+			PRIMARY KEY 
+			(
+				<#= SqlQueryUtils.GetSeperatedColumnNames(Description.OrmTypeMetaDataView.TablePrimaryKeyDescriptions, ", ", true) #>
+			);
+<# } #>

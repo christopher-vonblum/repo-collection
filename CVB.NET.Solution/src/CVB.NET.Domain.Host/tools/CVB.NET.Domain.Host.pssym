@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="7" PostSharpLinesOfCode="0" EnhancedTypesCount="3" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[CVB.NET.Domain.Model]CVB.NET.Domain.Model.Aspect.DomainServicesRemotingAccessorAspect">
+    <Instance Declaration="#2=T:[CVB.NET.Domain.Host]CVB.NET.Domain.Host.Context.HostDomainContext" Id="d8fe7bd548eb6cea">
+      <Target Target="#3=P:[CVB.NET.Domain.Host]CVB.NET.Domain.Host.Context.HostDomainContext::AppDomainProvider()">
+        <JoinPoint Advised="#4=M:[CVB.NET.Domain.Host]CVB.NET.Domain.Host.Context.HostDomainContext::get_AppDomainProvider()" Advising="#1" Description="#5=Intercepted by advice OnGetValue" Semantic="Getter" Ordinal="3" />
+        <JoinPoint Advised="#6=M:[CVB.NET.Domain.Host]CVB.NET.Domain.Host.Context.HostDomainContext::set_AppDomainProvider(CVB.NET.Domain.Model.Base.IAppDomainProvider)" Advising="#1" Description="#7=Intercepted by advice OnSetValue" Semantic="Setter" Ordinal="5" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#8=T:[CVB.NET.Ioc]CVB.NET.Ioc.Aspects.IocAccessorAspect">
+    <Instance Declaration="#2" Id="d8fe7bd51520c399">
+      <Target Target="#3">
+        <JoinPoint Advised="#4" Advising="#8" Description="#5" Semantic="Getter" Ordinal="2" />
+        <JoinPoint Advised="#6" Advising="#8" Description="#9=Intercepted by advice " Semantic="Setter" Ordinal="4" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#10=T:[CVB.NET.Configuration]CVB.NET.Configuration.Aspects.ConfigurationPropertyAspectProvider">
+    <Instance Declaration="#11=A:CVB.NET.Configuration" ForwardRef="true" Id="cab4e07301fc2554">
+      <Target Target="#12=T:[CVB.NET.Domain.Host]CVB.NET.Domain.Host.Configuration.HostedDomainConfigurationElement" LinesAvoided="8" />
+      <Target Target="#13=T:[CVB.NET.Domain.Host]CVB.NET.Domain.Host.Configuration.HostedDomainsConfigurationSection" LinesAvoided="7" />
+    </Instance>
+  </Class>
+  <Class Class="#14=T:[CVB.NET.Aspects]CVB.NET.Aspects.Validation.BuildTime.RequiresConstructorContract">
+    <Instance Declaration="#11" ForwardRef="true" Id="cab4e07363f021f3">
+      <Target Target="#12" />
+      <Target Target="#13" />
+    </Instance>
+  </Class>
+  <Class Class="#15=T:[CVB.NET.Configuration]CVB.NET.Configuration.Aspects.ConfigurationElementAspect">
+    <Instance Declaration="#11" ForwardRef="true" Id="cab4e073c17940e0">
+      <Target Target="#12">
+        <JoinPoint Advised="#16=M:[CVB.NET.Domain.Host]CVB.NET.Domain.Host.Configuration.HostedDomainConfigurationElement::get_Name()" Description="#17=Intercepted by advice OnPropertyGet" Semantic="Getter" Ordinal="0" LinesAvoided="2" />
+        <JoinPoint Advised="#18=M:[CVB.NET.Domain.Host]CVB.NET.Domain.Host.Configuration.HostedDomainConfigurationElement::set_Name(System.String)" Description="#19=Intercepted by advice OnPropertySet" Semantic="Setter" LinesAvoided="2" />
+      </Target>
+      <Target Target="#13" />
+    </Instance>
+  </Class>
+  <Annotation Target="#20=M:[CVB.NET.Configuration]CVB.NET.Configuration.Aspects.ConfigurationElementAspect::OnPropertyGet(PostSharp.Aspects.LocationInterceptionArgs)" Arguments="#21=2" Description="#22=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#23=M:[CVB.NET.Configuration]CVB.NET.Configuration.Aspects.ConfigurationElementAspect::OnPropertySet(PostSharp.Aspects.LocationInterceptionArgs)" Arguments="#21" Description="#22" />
+  <Annotation Target="#24=M:[PostSharp]PostSharp.Aspects.LocationInterceptionAspect::OnSetValue([PostSharp]PostSharp.Aspects.LocationInterceptionArgs)" Arguments="#21" Description="#22" />
+</Symbols>

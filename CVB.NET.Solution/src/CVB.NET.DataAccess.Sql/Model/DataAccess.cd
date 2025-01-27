@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CVB.NET.DataAccess.Attributes.AllowNullAttribute" Collapsed="true">
+    <Position X="13.75" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Attributes\AllowNullAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Attributes.IdentifierAttribute" Collapsed="true">
+    <Position X="12.5" Y="20.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Attributes\IdentifierAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Attributes.ModelBaseAttribute" Collapsed="true">
+    <Position X="12.5" Y="19.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Attributes\ModelBaseAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Attributes.ModelBaseTypeAttribute" Collapsed="true">
+    <Position X="7" Y="22.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Attributes\ModelBaseTypeAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Attributes.NoColumnAttribute" Collapsed="true">
+    <Position X="12.5" Y="21.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Attributes\NoColumnAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Exception.CreateRecordException">
+    <Position X="12.75" Y="13" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Exception\CreateRecordException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Exception.CreateTypeFirstException">
+    <Position X="11.5" Y="14.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Exception\CreateTypeFirstException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Exception.CrudRepositoryException">
+    <Position X="11.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Exception\CrudRepositoryException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Exception.DeleteRecordException">
+    <Position X="15" Y="13" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Exception\DeleteRecordException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Exception.PrimaryKeyPropertiesAreRequiredException">
+    <Position X="7.75" Y="14.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>src\Exception\PrimaryKeyPropertiesAreRequiredException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Exception.ReadRecordException">
+    <Position X="7.75" Y="13" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Exception\ReadRecordException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Exception.UpdateRecordException">
+    <Position X="10.5" Y="13" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Exception\UpdateRecordException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase&lt;TScheme&gt;">
+    <Position X="0.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAIAAACAAAAAAgAAEAAEgAAAAAAAEAAAA=</HashCode>
+      <FileName>src\Repository\Base\QueryableCrudRepositoryBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Repository.GenericModel.GenericModelImplementation" BaseTypeListCollapsed="true">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIACAAAAAEAAAAACAAAAAAAAABAAAAAQQAAAAACAAA=</HashCode>
+      <FileName>src\Repository\GenericModel\GenericModelImplementation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Repository.Mapper.GenericModelMapper" BaseTypeListCollapsed="true">
+    <Position X="3" Y="10.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAQAIEgAAAAAAAAEAEAAAAAEAAAAACgAAAAAAAAAAA=</HashCode>
+      <FileName>src\Repository\Mapper\GenericModelMapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.MetaData.Lookups.DeclaredForeignModelReferencePropertyLookup">
+    <Position X="8.75" Y="2.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\MetaData\Lookups\DeclaredForeignModelReferencePropertyLookup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.MetaData.Lookups.DeclaredPrimitiveValuePropertiesLookup">
+    <Position X="8.25" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\MetaData\Lookups\DeclaredPrimitiveValuePropertiesLookup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.MetaData.Lookups.ForeignModelReferencePropertyLookup">
+    <Position X="5.25" Y="2.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\MetaData\Lookups\ForeignModelReferencePropertyLookup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.MetaData.Lookups.MandatoryPropertyLookup">
+    <Position X="2.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\MetaData\Lookups\MandatoryPropertyLookup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.MetaData.Lookups.PrimaryKeyPropertyLookup">
+    <Position X="2.75" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\MetaData\Lookups\PrimaryKeyPropertyLookup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.MetaData.Lookups.PrimitiveValuePropertiesLookup">
+    <Position X="5.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\MetaData\Lookups\PrimitiveValuePropertiesLookup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.MetaData.Utils.ModelBaseTypeUtils">
+    <Position X="7.75" Y="19.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\MetaData\Utils\ModelBaseTypeUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.MetaData.Views.OrmTypeMetaDataView">
+    <Position X="3.75" Y="4.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>gAACACKAAAAAAAAAAAAAQAAAAAAAAAEABAAAAACAAAA=</HashCode>
+      <FileName>src\Sql\MetaData\Views\OrmTypeMetaDataView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.MsSqlQueryableCrudRepository&lt;TScheme&gt;">
+    <Position X="0.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAABEAAAQEAAAAAAAAgAAEEAEgAAAAAAAGAAAA=</HashCode>
+      <FileName>src\Sql\MsSqlQueryableCrudRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.OrmTypeDescriptor">
+    <Position X="2.75" Y="14" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>gBAAAAERAEEAAQEBAAQAMAQEAIAQABAgAAGBAAiEAAA=</HashCode>
+      <FileName>src\Sql\OrmTypeDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.PrimitiveSerialization.PrimitiveSerializerBase&lt;T&gt;">
+    <Position X="19" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\PrimitiveSerialization\PrimitiveSerializerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.PrimitiveSerialization.TypeAsPrimitiveSerializer">
+    <Position X="18.75" Y="14.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\PrimitiveSerialization\PrimitiveSerializerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.Base.QueryTemplateBase" Collapsed="true">
+    <Position X="22.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACABAAAAQAIAESAIAhEIABCAAAAAAAAAACAAQAEoAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Base\QueryTemplateBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.Base.QueryTemplateBase&lt;TParameterType&gt;" Collapsed="true">
+    <Position X="22.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Base\QueryTemplateBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CVB.NET.DataAccess.src.Sql.QueryTemplates.CreateTableConstraints">
+    <Position X="21.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAEIAAQEAAAAAQASEAAAEAAAIAAAAAIhAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\CreateTableConstraints.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.src.Sql.QueryTemplates.SelectRecordQuery">
+    <Position X="23.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAABAAAAEAAAQEACABAQASEAAAAAAAIAgCgEAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\SelectRecordQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.CreateTableQuery">
+    <Position X="25.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAEAAAQEAAAAAQASEAAAEAAAIAAAAAAhAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\CreateTableQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.DeleteRecordQuery">
+    <Position X="28" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAEAAAQEAAAAAQASEAAAAAAAIAAAAAAhAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\DeleteRecordQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.InsertRecordQuery">
+    <Position X="16.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAEAAAQEAAAAAQASEAAAAAAAIAAAgEAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\InsertRecordQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.UpdateRecordQuery">
+    <Position X="19" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAABAAAAEAAAQAACAAAQASEAAAAAAAIAAAgEAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\UpdateRecordQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.Model.Base.DatabaseScopedQuery">
+    <Position X="21.5" Y="15" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Model\Base\DatabaseScopedQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.Model.Base.TableScopedQueryDescription">
+    <Position X="18.25" Y="17.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Model\Base\TableScopedQueryDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.Model.CreateTableDescription">
+    <Position X="16.75" Y="19.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Model\CreateTableDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.Model.DeleteRecordDescription">
+    <Position X="21" Y="17.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Model\DeleteRecordDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.Model.InsertRecordDescription">
+    <Position X="23.25" Y="17.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Model\InsertRecordDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.Model.SelectRecordDescription">
+    <Position X="19.25" Y="19.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACABAQAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Model\SelectRecordDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.Model.UpdateRecordDescription">
+    <Position X="25.5" Y="17.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAQAAEAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Model\UpdateRecordDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.Model.SubModels.ColumnDescription">
+    <Position X="26" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAADAAAAAQCAAAAIAAQAABAAAAAAAQIIAAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Model\SubModels\ColumnDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.QueryTemplates.Model.SubModels.ColumnValue">
+    <Position X="23" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Model\SubModels\ColumnValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.TreeModelRepository.Schema.ModelBase">
+    <Position X="10.75" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAABBAAAAQAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\TreeModelRepository\Schema\ModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.TreeModelRepository.Schema.ModelType">
+    <Position X="9.25" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\TreeModelRepository\Schema\ModelType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.TreeModelRepository.Schema.TreeModelBase">
+    <Position X="12" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\TreeModelRepository\Schema\TreeModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.Utils.QueryUtils">
+    <Position X="18.25" Y="4" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAEAgAAAAAAQAAAAAAAAAAAAAAAAAAAAEAQAAAAAIA=</HashCode>
+      <FileName>src\Sql\Utils\QueryUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CVB.NET.DataAccess.Repository.IQueryableCrudRepository">
+    <Position X="8.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Repository\IQueryableCrudRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CVB.NET.DataAccess.Repository.IQueryableCrudRepository&lt;TScheme&gt;">
+    <Position X="9.5" Y="6" Width="1.5" />
+    <InheritanceLine Type="CVB.NET.DataAccess.Repository.ICrudRepository&lt;TScheme&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="10" Y="9.75" />
+        <Point X="10" Y="7.375" />
+        <Point X="10.25" Y="7.375" />
+        <Point X="10.25" Y="7.256" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Repository\IQueryableCrudRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CVB.NET.DataAccess.Repository.GenericModel.IGenericModel">
+    <Position X="1" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAQQAAAAACAAA=</HashCode>
+      <FileName>src\Repository\GenericModel\IGenericModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CVB.NET.DataAccess.Repository.ICrudRepository">
+    <Position X="11" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Repository\ICrudRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CVB.NET.DataAccess.Repository.ICrudRepository&lt;TScheme&gt;">
+    <Position X="9.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Repository\ICrudRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CVB.NET.DataAccess.Repository.IQueryableRepository">
+    <Position X="7" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Repository\IQueryableRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CVB.NET.DataAccess.Repository.IQueryableRepository&lt;TScheme&gt;">
+    <Position X="7.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Repository\IQueryableRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CVB.NET.DataAccess.Repository.IReadOnlyRepository">
+    <Position X="12.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>src\Repository\IReadOnlyRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CVB.NET.DataAccess.Repository.IReadOnlyRepository&lt;TScheme&gt;">
+    <Position X="13.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>src\Repository\IReadOnlyRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CVB.NET.DataAccess.Repository.Mapper.IGenericModelMapper">
+    <Position X="3.5" Y="8" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAEAAAAAAAAAEAEAAAAAAAAAAACgAAAAAAAAAAA=</HashCode>
+      <FileName>src\Repository\Mapper\IGenericModelMapper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CVB.NET.DataAccess.Sql.QueryTemplates.Base.IT4Template" Collapsed="true">
+    <Position X="25.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Base\IT4Template.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CVB.NET.DataAccess.Sql.QueryTemplates.Base.IT4Template&lt;TParameterType&gt;" Collapsed="true">
+    <Position X="25" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\QueryTemplates\Base\IT4Template.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CVB.NET.DataAccess.Sql.Utils.ConstraintType">
+    <Position X="22" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>src\Sql\Utils\ConstraintType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVB.NET.DataAccess.Sql.Utils.LogicalOperator">
+    <Position X="23.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAAA=</HashCode>
+      <FileName>src\Sql\Utils\LogicalOperator.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="559" PostSharpLinesOfCode="0" EnhancedTypesCount="18" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute">
+    <Instance Declaration="#2=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::GetLookup(System.Delegate, System.Reflection.ICustomAttributeProvider)@lookupMethod" Id="9269406e057e8f36">
+      <Target>
+        <JoinPoint Advised="#3=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::GetLookup(System.Delegate, System.Reflection.ICustomAttributeProvider)" Advising="#1" Description="#4=Validates the value passed to parameter 'lookupMethod'" Ordinal="0" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#5=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::GetLookup(System.Delegate, System.Reflection.ICustomAttributeProvider)@reflectionInfo" Id="9269406e76d6991d">
+      <Target>
+        <JoinPoint Advised="#3" Advising="#1" Description="#6=Validates the value passed to parameter 'reflectionInfo'" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#7=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::GetLookup{TValue}(System.Delegate, System.Reflection.ICustomAttributeProvider)@lookupMethod" Id="9269406ef3469503">
+      <Target>
+        <JoinPoint Advised="#8=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::GetLookup{TValue}(System.Delegate, System.Reflection.ICustomAttributeProvider)" Advising="#1" Description="#4" Ordinal="2" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#9=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::GetLookup{TValue}(System.Delegate, System.Reflection.ICustomAttributeProvider)@reflectionInfo" Id="9269406ef4d354b5">
+      <Target>
+        <JoinPoint Advised="#8" Advising="#1" Description="#6" Ordinal="3" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#10=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::GetLookup{TValue,TReflectionInfo}(System.Func{TReflectionInfo,TValue}, System.Reflection.ICustomAttributeProvider)@lookupMethod" Id="9269406e0ca79666">
+      <Target>
+        <JoinPoint Advised="#11=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::GetLookup{TValue,TReflectionInfo}(System.Func{TReflectionInfo,TValue}, System.Reflection.ICustomAttributeProvider)" Advising="#1" Description="#4" Ordinal="4" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#12=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::GetLookup{TValue,TReflectionInfo}(System.Func{TReflectionInfo,TValue}, System.Reflection.ICustomAttributeProvider)@reflectionInfo" Id="9269406e2c283a05">
+      <Target>
+        <JoinPoint Advised="#11" Advising="#1" Description="#6" Ordinal="5" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#13=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::Get(System.Reflection.ICustomAttributeProvider)@reflectionInfo" Id="9269406e072b2c47">
+      <Target>
+        <JoinPoint Advised="#14=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::Get(System.Reflection.ICustomAttributeProvider)" Advising="#1" Description="#6" Ordinal="6" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#15=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::Get{TCachedReflectionInfo}(System.Reflection.ICustomAttributeProvider)@reflectionInfo" Id="9269406ee5277c29">
+      <Target>
+        <JoinPoint Advised="#16=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::Get{TCachedReflectionInfo}(System.Reflection.ICustomAttributeProvider)" Advising="#1" Description="#6" Ordinal="7" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#17=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::Get(System.Type, System.Reflection.ICustomAttributeProvider)@tCachedReflectionInfo" Id="9269406e9db334b9">
+      <Target>
+        <JoinPoint Advised="#18=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::Get(System.Type, System.Reflection.ICustomAttributeProvider)" Advising="#1" Description="#19=Validates the value passed to parameter 'tCachedReflectionInfo'" Ordinal="8" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#20=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.ReflectionCache::Get(System.Type, System.Reflection.ICustomAttributeProvider)@reflectionInfo" Id="9269406e15fb5aba">
+      <Target>
+        <JoinPoint Advised="#18" Advising="#1" Description="#6" Ordinal="9" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#21=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Aspect.UseLookupAttribute::#ctor(System.Type, System.String)@lookupType" Id="9269406eb0215349">
+      <Target>
+        <JoinPoint Advised="#22=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Aspect.UseLookupAttribute::#ctor(System.Type, System.String)" Advising="#1" Description="#23=Validates the value passed to parameter 'lookupType'" Ordinal="10" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#24=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMethodBase::#ctor(System.Reflection.MethodBase)@memberInfo" Id="9269406e838a12fe">
+      <Target>
+        <JoinPoint Advised="#25=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMethodBase::#ctor(System.Reflection.MethodBase)" Advising="#1" Description="#26=Validates the value passed to parameter 'memberInfo'" Ordinal="13" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#27=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo::#ctor(System.Reflection.ConstructorInfo)@constructorInfo" Id="9269406edebf0a94">
+      <Target>
+        <JoinPoint Advised="#28=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo::#ctor(System.Reflection.ConstructorInfo)" Advising="#1" Description="#29=Validates the value passed to parameter 'constructorInfo'" Ordinal="16" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#30=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo::#ctor(System.Reflection.MemberInfo)@memberInfo" Id="9269406ed88f01d1">
+      <Target>
+        <JoinPoint Advised="#31=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo::#ctor(System.Reflection.MemberInfo)" Advising="#1" Description="#26" Ordinal="19" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#32=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMethodInfo::#ctor(System.Reflection.MethodInfo)@methodInfo" Id="9269406e5392c27e">
+      <Target>
+        <JoinPoint Advised="#33=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMethodInfo::#ctor(System.Reflection.MethodInfo)" Advising="#1" Description="#34=Validates the value passed to parameter 'methodInfo'" Ordinal="28" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#35=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedParameterInfo::#ctor(System.Reflection.ParameterInfo)@parameterInfo" Id="9269406ea3e14f0b">
+      <Target>
+        <JoinPoint Advised="#36=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedParameterInfo::#ctor(System.Reflection.ParameterInfo)" Advising="#1" Description="#37=Validates the value passed to parameter 'parameterInfo'" Ordinal="31" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#38=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo::#ctor(System.Reflection.PropertyInfo)@propertyInfo" Id="9269406e683625f8">
+      <Target>
+        <JoinPoint Advised="#39=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo::#ctor(System.Reflection.PropertyInfo)" Advising="#1" Description="#40=Validates the value passed to parameter 'propertyInfo'" Ordinal="34" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#41=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::#ctor(System.Type)@reflectedType" Id="9269406ec2a8edec">
+      <Target>
+        <JoinPoint Advised="#42=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::#ctor(System.Type)" Advising="#1" Description="#43=Validates the value passed to parameter 'reflectedType'" Ordinal="48" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#44=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::GetGenericTypeIdentityString(System.Type)@type" Id="9269406ee1563aef">
+      <Target>
+        <JoinPoint Advised="#45=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::GetGenericTypeIdentityString(System.Type)" Advising="#1" Description="#46=Validates the value passed to parameter 'type'" Ordinal="49" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#47=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Base.CachedAttributeLocationBase::#ctor(System.Reflection.ICustomAttributeProvider)@attributeProvider" Id="9269406e85268c5c">
+      <Target>
+        <JoinPoint Advised="#48=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Base.CachedAttributeLocationBase::#ctor(System.Reflection.ICustomAttributeProvider)" Advising="#1" Description="#49=Validates the value passed to parameter 'attributeProvider'" Ordinal="12" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#50=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Base.DebuggableLazy{T}::#ctor(System.Func{T})@factory" Id="9269406ed5e798ef">
+      <Target>
+        <JoinPoint Advised="#51=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Base.DebuggableLazy{T}::#ctor(System.Func{T})" Advising="#1" Description="#52=Validates the value passed to parameter 'factory'" Ordinal="86" LinesAvoided="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#53=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute">
+    <Instance Declaration="#54=R:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Aspect.UseLookupAttribute::#ctor(System.Type, System.String)@method" Id="9269406ecc2eacc2">
+      <Target>
+        <JoinPoint Advised="#22" Advising="#53" Description="#55=Validates the value passed to parameter 'method'" Ordinal="11" LinesAvoided="4" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#56=T:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Aspect.ReflectionViewAspect">
+    <Instance Declaration="#57=T:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Wrapper.ReflectionViewWrapper{TMetaData}" Id="9269406ec646bd3f">
+      <Target />
+    </Instance>
+    <Instance Declaration="#58=T:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Interface.IReflectionView" Id="9269406e051832cd">
+      <Target Target="#57" />
+      <Target />
+      <Target Target="#59=T:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedInterface">
+        <JoinPoint Advised="#60=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedInterface::get_DeclaredBaseInterfaces()" Description="#61=Intercepted by advice OnPropertyGet" Semantic="Getter" Ordinal="87" LinesAvoided="2" />
+        <JoinPoint Advised="#62=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedInterface::get_BaseInterfaces()" Description="#61" Semantic="Getter" Ordinal="88" LinesAvoided="2" />
+        <JoinPoint Advised="#63=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedInterface::get_Events()" Description="#61" Semantic="Getter" Ordinal="89" LinesAvoided="2" />
+        <JoinPoint Advised="#64=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedInterface::get_Methods()" Description="#61" Semantic="Getter" Ordinal="90" LinesAvoided="2" />
+        <JoinPoint Advised="#65=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedInterface::get_Properties()" Description="#61" Semantic="Getter" Ordinal="91" LinesAvoided="2" />
+        <JoinPoint Advised="#66=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedInterface::get_GenericTypeDefinition()" Description="#61" Semantic="Getter" Ordinal="92" LinesAvoided="2" />
+      </Target>
+      <Target Target="#67=T:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType">
+        <JoinPoint Advised="#68=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::get_GenericTypeArguments()" Description="#61" Semantic="Getter" Ordinal="37" LinesAvoided="2" />
+        <JoinPoint Advised="#69=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::get_GenericTypeDefinition()" Description="#61" Semantic="Getter" Ordinal="38" LinesAvoided="2" />
+        <JoinPoint Advised="#70=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::get_HasDefaultConstructor()" Description="#61" Semantic="Getter" Ordinal="39" LinesAvoided="2" />
+        <JoinPoint Advised="#71=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::get_DefaultConstructor()" Description="#61" Semantic="Getter" Ordinal="40" LinesAvoided="2" />
+        <JoinPoint Advised="#72=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::get_Constructors()" Description="#61" Semantic="Getter" Ordinal="41" LinesAvoided="2" />
+        <JoinPoint Advised="#73=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::get_Properties()" Description="#61" Semantic="Getter" Ordinal="42" LinesAvoided="2" />
+        <JoinPoint Advised="#74=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::get_Fields()" Description="#61" Semantic="Getter" Ordinal="43" LinesAvoided="2" />
+        <JoinPoint Advised="#75=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::get_Methods()" Description="#61" Semantic="Getter" Ordinal="44" LinesAvoided="2" />
+        <JoinPoint Advised="#76=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::get_Interfaces()" Description="#61" Semantic="Getter" Ordinal="45" LinesAvoided="2" />
+        <JoinPoint Advised="#77=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::get_Events()" Description="#61" Semantic="Getter" Ordinal="46" LinesAvoided="2" />
+        <JoinPoint Advised="#78=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::get_StaticMethods()" Description="#61" Semantic="Getter" Ordinal="47" LinesAvoided="2" />
+      </Target>
+      <Target Target="#79=T:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView">
+        <JoinPoint Advised="#80=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_Inner()" Description="#61" Semantic="Getter" Ordinal="53" LinesAvoided="2" />
+        <JoinPoint Advised="#81=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_Reflected()" Description="#61" Semantic="Getter" Ordinal="55" LinesAvoided="2" />
+        <JoinPoint Advised="#82=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_Attributes()" Description="#61" Semantic="Getter" Ordinal="57" LinesAvoided="2" />
+        <JoinPoint Advised="#83=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_InheritedAttributes()" Description="#61" Semantic="Getter" Ordinal="59" LinesAvoided="2" />
+        <JoinPoint Advised="#84=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_GenericTypeArguments()" Description="#61" Semantic="Getter" Ordinal="61" LinesAvoided="2" />
+        <JoinPoint Advised="#85=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_GenericTypeDefinition()" Description="#61" Semantic="Getter" Ordinal="63" LinesAvoided="2" />
+        <JoinPoint Advised="#86=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_HasDefaultConstructor()" Description="#61" Semantic="Getter" Ordinal="65" LinesAvoided="2" />
+        <JoinPoint Advised="#87=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_DefaultConstructor()" Description="#61" Semantic="Getter" Ordinal="67" LinesAvoided="2" />
+        <JoinPoint Advised="#88=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_Constructors()" Description="#61" Semantic="Getter" Ordinal="69" LinesAvoided="2" />
+        <JoinPoint Advised="#89=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_Properties()" Description="#61" Semantic="Getter" Ordinal="71" LinesAvoided="2" />
+        <JoinPoint Advised="#90=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_Fields()" Description="#61" Semantic="Getter" Ordinal="73" LinesAvoided="2" />
+        <JoinPoint Advised="#91=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_Methods()" Description="#61" Semantic="Getter" Ordinal="75" LinesAvoided="2" />
+        <JoinPoint Advised="#92=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_Interfaces()" Description="#61" Semantic="Getter" Ordinal="77" LinesAvoided="2" />
+        <JoinPoint Advised="#93=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_Events()" Description="#61" Semantic="Getter" Ordinal="79" LinesAvoided="2" />
+        <JoinPoint Advised="#94=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_StaticMethods()" Description="#61" Semantic="Getter" Ordinal="81" LinesAvoided="2" />
+        <JoinPoint Advised="#95=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::get_Parent()" Description="#61" Semantic="Getter" Ordinal="83" LinesAvoided="2" />
+        <JoinPoint Advised="#96=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::CVB#NET#Reflection#Caching#Interface#IChild#get_Parent()" Description="#61" Semantic="Getter" Ordinal="85" LinesAvoided="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#97=T:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.DebuggingProxyAspectAttribute">
+    <Instance Declaration="#98=T:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.IDebuggingProxy" Id="9269406ea0502c19">
+      <Target Target="#99=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::Inner()">
+        <JoinPoint Advised="#80" Description="#100=Intercepted by advice OnGetValue" Semantic="Getter" Ordinal="52" />
+      </Target>
+      <Target Target="#101=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::Reflected()">
+        <JoinPoint Advised="#81" Description="#100" Semantic="Getter" Ordinal="54" />
+      </Target>
+      <Target Target="#102=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::Attributes()">
+        <JoinPoint Advised="#82" Description="#100" Semantic="Getter" Ordinal="56" />
+      </Target>
+      <Target Target="#103=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::InheritedAttributes()">
+        <JoinPoint Advised="#83" Description="#100" Semantic="Getter" Ordinal="58" />
+      </Target>
+      <Target Target="#104=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::GenericTypeArguments()">
+        <JoinPoint Advised="#84" Description="#100" Semantic="Getter" Ordinal="60" />
+      </Target>
+      <Target Target="#105=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::GenericTypeDefinition()">
+        <JoinPoint Advised="#85" Description="#100" Semantic="Getter" Ordinal="62" />
+      </Target>
+      <Target Target="#106=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::HasDefaultConstructor()">
+        <JoinPoint Advised="#86" Description="#100" Semantic="Getter" Ordinal="64" />
+      </Target>
+      <Target Target="#107=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::DefaultConstructor()">
+        <JoinPoint Advised="#87" Description="#100" Semantic="Getter" Ordinal="66" />
+      </Target>
+      <Target Target="#108=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::Constructors()">
+        <JoinPoint Advised="#88" Description="#100" Semantic="Getter" Ordinal="68" />
+      </Target>
+      <Target Target="#109=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::Properties()">
+        <JoinPoint Advised="#89" Description="#100" Semantic="Getter" Ordinal="70" />
+      </Target>
+      <Target Target="#110=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::Fields()">
+        <JoinPoint Advised="#90" Description="#100" Semantic="Getter" Ordinal="72" />
+      </Target>
+      <Target Target="#111=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::Methods()">
+        <JoinPoint Advised="#91" Description="#100" Semantic="Getter" Ordinal="74" />
+      </Target>
+      <Target Target="#112=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::Interfaces()">
+        <JoinPoint Advised="#92" Description="#100" Semantic="Getter" Ordinal="76" />
+      </Target>
+      <Target Target="#113=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::Events()">
+        <JoinPoint Advised="#93" Description="#100" Semantic="Getter" Ordinal="78" />
+      </Target>
+      <Target Target="#114=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::StaticMethods()">
+        <JoinPoint Advised="#94" Description="#100" Semantic="Getter" Ordinal="80" />
+      </Target>
+      <Target Target="#115=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::Parent()">
+        <JoinPoint Advised="#95" Description="#100" Semantic="Getter" Ordinal="82" />
+      </Target>
+      <Target Target="#116=P:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType+CachedTypeDebugView::CVB#NET#Reflection#Caching#Interface#IChild#Parent()">
+        <JoinPoint Advised="#96" Description="#100" Semantic="Getter" Ordinal="84" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#117=T:[CVB.NET.Aspects]CVB.NET.Aspects.MethodBehaviors.TrierDoerAspect">
+    <Instance Declaration="#118=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedInterface::op_Implicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedInterface)~System.Type" Id="9269406eef18dd36">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119=Wrapped by advice(s) OnEntry, OnException" Ordinal="93" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#120=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedInterface::op_Implicit(System.Type)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedInterface" Id="9269406e0e205d4a">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="94" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#121=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMethodBase::op_Implicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMethodBase)~System.Reflection.MethodBase" Id="9269406eb3220351">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="14" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#122=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMethodBase::op_Implicit(System.Reflection.MethodBase)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMethodBase" Id="9269406e897a8ce8">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="15" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#123=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedAssembly::op_Implicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedAssembly)~System.Reflection.Assembly" Id="9269406e989441d2">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="95" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#124=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedAssembly::op_Implicit(System.Reflection.Assembly)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedAssembly" Id="9269406efd83270d">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="96" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#125=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo::op_Implicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo)~System.Reflection.ConstructorInfo" Id="9269406e3b1c821d">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="17" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#126=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo::op_Implicit(System.Reflection.ConstructorInfo)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedConstructorInfo" Id="9269406e8d94b3db">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="18" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#127=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedEventInfo::op_Implicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedEventInfo)~System.Reflection.EventInfo" Id="9269406ef255d13e">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="97" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#128=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedEventInfo::op_Implicit(System.Reflection.EventInfo)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedEventInfo" Id="9269406e17ead510">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="98" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#129=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedFieldInfo::op_Implicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedFieldInfo)~System.Reflection.FieldInfo" Id="9269406e67c86965">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="99" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#130=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedFieldInfo::op_Implicit(System.Reflection.FieldInfo)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedFieldInfo" Id="9269406e9b1424ed">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="100" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#131=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo::op_Implicit(System.Reflection.MemberInfo)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo" Id="9269406e4e10a0fb">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="20" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#132=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo::op_Implicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo)~System.Reflection.MemberInfo" Id="9269406ec343927c">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="21" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#133=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo::op_Explicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo)~System.Reflection.ConstructorInfo" Id="9269406e6b80115b">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="22" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#134=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo::op_Implicit(System.Reflection.ConstructorInfo)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo" Id="9269406e6d8cf459">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="23" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#135=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo::op_Explicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo)~System.Reflection.PropertyInfo" Id="9269406e7eb86b73">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="24" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#136=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo::op_Implicit(System.Reflection.PropertyInfo)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo" Id="9269406e26874b48">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="25" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#137=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo::op_Explicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo)~System.Reflection.MethodInfo" Id="9269406ef13f1d6d">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="26" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#138=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo::op_Implicit(System.Reflection.MethodInfo)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMemberInfo" Id="9269406efb0108ac">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="27" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#139=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMethodInfo::op_Implicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMethodInfo)~System.Reflection.MethodInfo" Id="9269406ef1309fd7">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="29" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#140=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMethodInfo::op_Implicit(System.Reflection.MethodInfo)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedMethodInfo" Id="9269406eb7561bcd">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="30" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#141=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedParameterInfo::op_Implicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedParameterInfo)~System.Reflection.ParameterInfo" Id="9269406ea604f7cf">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="32" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#142=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedParameterInfo::op_Implicit(System.Reflection.ParameterInfo)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedParameterInfo" Id="9269406e8daab367">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="33" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#143=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo::op_Implicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo)~System.Reflection.PropertyInfo" Id="9269406e5958f19d">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="35" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#144=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo::op_Implicit(System.Reflection.PropertyInfo)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo" Id="9269406e3d0d3ba3">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="36" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#145=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::op_Implicit([CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType)~System.Type" Id="9269406ec7ee2418">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="50" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#146=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType::op_Implicit(System.Type)~[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Cached.CachedType" Id="9269406ea917abaf">
+      <Target>
+        <JoinPoint Advising="#117" Description="#119" Ordinal="51" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#147=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute::ValidateValue(System.Object, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#148=2" Description="#149=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#150=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute::ValidateValueString(System.String, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#148" Description="#149" />
+  <Annotation Target="#151=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute::ValidateValueCollection(System.Collections.ICollection, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#148" Description="#149" />
+  <Annotation Target="#152=M:[CVB.NET.Aspects]CVB.NET.Aspects.MethodBehaviors.TrierDoerAspect::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#148" Description="#149" />
+  <Annotation Target="#153=M:[CVB.NET.Aspects]CVB.NET.Aspects.MethodBehaviors.TrierDoerAspect::OnException(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#148" Description="#149" />
+  <Annotation Target="#154=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Aspect.ReflectionViewAspect::OnPropertyGet(PostSharp.Aspects.LocationInterceptionArgs)" Arguments="#148" Description="#149" />
+</Symbols>

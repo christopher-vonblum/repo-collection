@@ -1,0 +1,39 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+init:
+  # Good practise, because Windows line endings are different from Unix/Linux ones
+  - cmd: git config --global core.autocrlf true
+ 
+before_build:
+  - cmd: dotnet --version
+  - cmd: dotnet restore ./AOPRoslyn/AOPRoslyn.sln --verbosity m
+  - cmd: dotnet tool install -g dotnet-aop
+  - cmd: dotnet tool install -g coverlet.console
+  - cmd: dotnet tool install -g dotnet-reportgenerator-globaltool --version 4.0.0-alpha10
+  - cmd: dotnet tool install -g dotnet-gcr
+  - cmd: dotnet aop
+  - choco install codecov
+
+build_script:
+  - cmd: dotnet publish ./AOPRoslyn/AOPRoslyn.sln
+  - cmd: dotnet gcr ignatandrei AOP_With_Roslyn
+
+test_script:
+  # restore packages for our unit tests
+  - cmd: dotnet restore ./AOPRoslyn/TestAOP/TestAOP.csproj --verbosity m
+  - cmd: vstest.console  /logger:Appveyor AOPRoslyn\TestAOP\bin\Debug\netcoreapp2.0\TestAOP.dll
+  # run the unit tests (requires changing into the test directory)
+  - cmd: dotnet test AOPRoslyn\TestAOP\TestAOP.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover 
+  - cmd: dir coverage*.* /S
+  - cmd: reportgenerator "-reports:./AOPRoslyn/TestAOP/coverage.opencover.xml" "-targetdir:coveragereport" -reporttypes:HTMLInline;HTMLSummary;Badges
+  - cmd: dir *.svg /s
+  - codecov -f ./AOPRoslyn/TestAOP/coverage.opencover.xml -t $(CODECOV_TOKEN)
+  
+  
+artifacts:
+   - path: '**\*.svg'  
+   - path: '**\statistics.txt'
+   
+on_finish :
+  # any cleanup in here
+deploy: off

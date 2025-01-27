@@ -1,0 +1,66 @@
+[submodule "src/CVB.NET.Aspects"]
+	path = src/CVB.NET.Aspects
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Aspects
+[submodule "src/CVB.NET.Configuration"]
+	path = src/CVB.NET.Configuration
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Configuration
+[submodule "src/CVB.NET.DataAccess"]
+	path = src/CVB.NET.DataAccess
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.DataAccess
+[submodule "src/CVB.NET.Ioc"]
+	path = src/CVB.NET.Ioc
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Ioc
+[submodule "src/CVB.NET.Exceptions"]
+	path = src/CVB.NET.Exceptions
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Exceptions
+[submodule "src/CVB.NET.TextTemplating"]
+	path = src/CVB.NET.TextTemplating
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.TextTemplating
+[submodule "src/CVB.NET.TorNetwork"]
+	path = src/CVB.NET.TorNetwork
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.TorNetwork
+[submodule "CVB.NET.GitScripts"]
+	path = CVB.NET.GitScripts
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.GitScripts
+[submodule "src/CVB.NET.DataAccess.Sql"]
+	path = src/CVB.NET.DataAccess.Sql
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.DataAccess.Sql
+[submodule "src/CVB.NET.DataAccess.Web"]
+	path = src/CVB.NET.DataAccess.Web
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.DataAccess.Web
+[submodule "src/CVB.NET.Debugging"]
+	path = src/CVB.NET.Debugging
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Debugging
+[submodule "src/CVB.NET.Rewriting"]
+	path = src/CVB.NET.Rewriting
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Rewriting
+[submodule "src/CVB.NET.Utils"]
+	path = src/CVB.NET.Utils
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Utils
+[submodule "src/CVB.NET.Reflection.Caching"]
+	path = src/CVB.NET.Reflection.Caching
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Reflection.Caching
+[submodule "src/CVB.NET.Reflection.Aspects"]
+	path = src/CVB.NET.Reflection.Aspects
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Reflection.Aspects
+[submodule "src/CVB.NET.Domain.Model"]
+	path = src/CVB.NET.Domain.Model
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Domain.Model
+[submodule "src/CVB.NET.Domain.Host"]
+	path = src/CVB.NET.Domain.Host
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Domain.Host
+[submodule "src/CVB.NET.Domain.Host.Launcher"]
+	path = src/CVB.NET.Domain.Host.Launcher
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Domain.Host.Launcher
+[submodule "src/CVB.NET.Ui"]
+	path = src/CVB.NET.Ui
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Ui
+[submodule "src/CVB.NET.Ui.Generic"]
+	path = src/CVB.NET.Ui.Generic
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Ui.Generic
+[submodule "src/CVB.NET.Ui.Generic.WindowsForms"]
+	path = src/CVB.NET.Ui.Generic.WindowsForms
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Ui.Generic.WindowsForms
+[submodule "src/CVB.NET.Ui.WindowsForms"]
+	path = src/CVB.NET.Ui.WindowsForms
+	url = https://chrisvb.visualstudio.com/DefaultCollection/CVB.NET%20Library/_git/CVB.NET.Ui.WindowsForms

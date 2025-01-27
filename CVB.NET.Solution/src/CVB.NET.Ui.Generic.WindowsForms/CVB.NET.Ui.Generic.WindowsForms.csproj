@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4793F77-6A12-4608-99A0-9CA2A124327D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CVB.NET.Ui.Generic.WindowsForms</RootNamespace>
+    <AssemblyName>CVB.NET.Ui.Generic.WindowsForms</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CVB.NET.Debugging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CVB.NET.Debugging.1.0.0\lib\net461\CVB.NET.Debugging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.0.34.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Immutable.1.0.34\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\InputControlFactory\WindowsFormsInputControlFactory.cs" />
+    <Compile Include="src\Controls\InputModelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Controls\InputModelControl.Designer.cs">
+      <DependentUpon>InputModelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Dialogs\InputModelDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Dialogs\InputModelDialog.Designer.cs">
+      <DependentUpon>InputModelDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Exception\PropertyTypeNotHandledException.cs" />
+    <Compile Include="src\Controls\RenderModelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Controls\RenderModelControl.Designer.cs">
+      <DependentUpon>RenderModelControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="src\Controls\InputModelControl.resx">
+      <DependentUpon>InputModelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Dialogs\InputModelDialog.resx">
+      <DependentUpon>InputModelDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CVB.NET.Reflection.Caching\CVB.NET.Reflection.Caching.csproj">
+      <Project>{1e0aa781-76cd-4171-ae6a-82c8a4609d7c}</Project>
+      <Name>CVB.NET.Reflection.Caching</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CVB.NET.Ui.Generic\CVB.NET.Ui.Generic.csproj">
+      <Project>{25aa3fb4-d28f-4d0c-9e00-14aa45a2a61e}</Project>
+      <Name>CVB.NET.Ui.Generic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CVB.NET.Ui.WindowsForms\CVB.NET.Ui.WindowsForms.csproj">
+      <Project>{63fccf17-4bc5-4988-a5a9-0f767dc61f81}</Project>
+      <Name>CVB.NET.Ui.WindowsForms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\Configuration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)packages\CVB.NET.BuildIntegration.Tools.1.0.0\content\build\CVB.NET.BuildIntegration.Tools.targets" />
+</Project>

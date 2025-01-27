@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="CVB.NET.Rewriting.tasks" />
+
+  <!-- If PostSharp is imported, override with combined targets -->
+  <PropertyGroup Condition="'$(InjectPostSharp30)' == 'True'">
+    <CompileDependsOn>
+      PostSharp30TimestampBeforeCompile;
+      $(CompileDependsOn);
+      CustomCompilationPreBuild
+      CustomCompilation;
+      PostSharp30TimestampAfterCompile;
+      PostSharp30
+    </CompileDependsOn>
+    <BuildDependsOn>
+      $(BuildDependsOn);
+      PostSharp30Verify;
+      AfterILRewritingPostBuild
+    </BuildDependsOn>
+  </PropertyGroup>
+
+  <!-- If PostSharp is not imported, override with necessary targets -->
+  <PropertyGroup Condition="'$(InjectPostSharp30)' != 'True'">
+    <CompileDependsOn>
+      $(CompileDependsOn);
+      ApplyILRewriting
+    </CompileDependsOn>
+    <BuildDependsOn>
+      $(BuildDependsOn);
+      AfterILRewritingPostBuild
+    </BuildDependsOn>
+  </PropertyGroup>
+
+  <Target Name="CustomCompilationPreBuild"></Target>
+  
+  <Target Name="CustomCompilation">
+    <CustomCompilationTask
+      RootIntermediateAssemblyPath="$(ProjectDir)$(BaseIntermediateOutputPath)$(Configuration)\$(TargetFileName)"
+      MsbuildProjectPath="$(MSBuildProjectFile)"
+      MsbuildSolutionPath="$(SolutionPath)/$(SolutionFileName)$(SolutionExt)" />
+  </Target>
+  
+  <Target Name="AfterILRewritingPostBuild"></Target>
+
+</Project>

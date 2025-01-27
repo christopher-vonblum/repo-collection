@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="993" PostSharpLinesOfCode="0" EnhancedTypesCount="9" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute">
+    <Instance Declaration="#2=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.ISqlCommandProvider::GetCreateTableForeignConstraintsCommand(System.Collections.Generic.IList{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ITableDescription})@tableDescription" Id="9b42f15e350f69bd">
+      <Target Target="#3=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.SqlCommandProvider::GetCreateTableForeignConstraintsCommand(System.Collections.Generic.IList{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ITableDescription})@tableDescriptions">
+        <JoinPoint Advised="#4=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.SqlCommandProvider::GetCreateTableForeignConstraintsCommand(System.Collections.Generic.IList{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ITableDescription})" Advising="#1" Description="#5=Validates the value passed to parameter 'tableDescriptions'" Ordinal="8" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#6=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.MsSqlQueryableCrudRepository{TScheme}::#ctor(System.Data.SqlClient.SqlConnection, System.String)@sqlConnection" Id="9b42f15edc97b728">
+      <Target>
+        <JoinPoint Advised="#7=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.MsSqlQueryableCrudRepository{TScheme}::#ctor(System.Data.SqlClient.SqlConnection, System.String)" Advising="#1" Description="#8=Validates the value passed to parameter 'sqlConnection'" Ordinal="0" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#9=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.SqlCommandProvider::#ctor(System.Data.SqlClient.SqlConnection, System.String, CVB.NET.DataAccess.Repository.GenericModel.IGenericModelMapper{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView})@connection" Id="9b42f15ee726705d">
+      <Target>
+        <JoinPoint Advised="#10=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.SqlCommandProvider::#ctor(System.Data.SqlClient.SqlConnection, System.String, CVB.NET.DataAccess.Repository.GenericModel.IGenericModelMapper{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView})" Advising="#1" Description="#11=Validates the value passed to parameter 'connection'" Ordinal="3" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#12=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.SqlCommandProvider::#ctor(System.Data.SqlClient.SqlConnection, System.String, CVB.NET.DataAccess.Repository.GenericModel.IGenericModelMapper{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView})@schema" Id="9b42f15eb09f69e5">
+      <Target>
+        <JoinPoint Advised="#10" Advising="#1" Description="#13=Validates the value passed to parameter 'schema'" Ordinal="4" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#14=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.SqlCommandProvider::#ctor(System.Data.SqlClient.SqlConnection, System.String, CVB.NET.DataAccess.Repository.GenericModel.IGenericModelMapper{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView})@mapper" Id="9b42f15e03c936a5">
+      <Target>
+        <JoinPoint Advised="#10" Advising="#1" Description="#15=Validates the value passed to parameter 'mapper'" Ordinal="5" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#16=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.SqlCommandProvider::GetCreateTableDependenciesCommand(System.Collections.Generic.IList{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ITableDescription})@tableDescriptions" Id="9b42f15e2bf24126">
+      <Target>
+        <JoinPoint Advised="#17=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.SqlCommandProvider::GetCreateTableDependenciesCommand(System.Collections.Generic.IList{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ITableDescription})" Advising="#1" Description="#5" Ordinal="6" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#18=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.SqlCommandProvider::GetCreateTableDependenciesQuery(System.Collections.Generic.IList{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ITableDescription})@tableDescriptions" Id="9b42f15e9a9743e0">
+      <Target>
+        <JoinPoint Advised="#19=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.SqlCommandProvider::GetCreateTableDependenciesQuery(System.Collections.Generic.IList{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ITableDescription})" Advising="#1" Description="#5" Ordinal="7" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#20=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.Utils.SqlModelUtils::GetForeignColumnName(CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo, CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo)@foreignPropertyInfo" Id="9b42f15ec8a8e558">
+      <Target>
+        <JoinPoint Advised="#21=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.Utils.SqlModelUtils::GetForeignColumnName(CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo, CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo)" Advising="#1" Description="#22=Validates the value passed to parameter 'foreignPropertyInfo'" Ordinal="9" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#23=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.Utils.SqlModelUtils::GetForeignColumnName(CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo, CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo)@foreignPrimaryKeyPropertyInfo" Id="9b42f15ef6196ad5">
+      <Target>
+        <JoinPoint Advised="#21" Advising="#1" Description="#24=Validates the value passed to parameter 'foreignPrimaryKeyPropertyInfo'" Ordinal="10" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#25=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.Utils.SqlModelUtils::GetCustomColumnName(CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo)@propertyInfo" Id="9b42f15e41826abc">
+      <Target>
+        <JoinPoint Advised="#26=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.Utils.SqlModelUtils::GetCustomColumnName(CVB.NET.Reflection.Caching.Cached.CachedPropertyInfo)" Advising="#1" Description="#27=Validates the value passed to parameter 'propertyInfo'" Ordinal="11" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#28=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Queries.Utils.SqlQueryUtils::GetSeperatedColumnNames(System.Collections.Generic.IEnumerable{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.INamedColumn}, System.String, System.Boolean)@columns" Id="9b42f15ec25e1151">
+      <Target>
+        <JoinPoint Advised="#29=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Queries.Utils.SqlQueryUtils::GetSeperatedColumnNames(System.Collections.Generic.IEnumerable{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.INamedColumn}, System.String, System.Boolean)" Advising="#1" Description="#30=Validates the value passed to parameter 'columns'" Ordinal="12" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#31=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Queries.Utils.SqlQueryUtils::GetSeperatedReferenceColumnNames(System.Collections.Generic.IEnumerable{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.IColumnDescription}, System.String, System.Boolean)@columns" Id="9b42f15e707f3b7e">
+      <Target>
+        <JoinPoint Advised="#32=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Queries.Utils.SqlQueryUtils::GetSeperatedReferenceColumnNames(System.Collections.Generic.IEnumerable{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.IColumnDescription}, System.String, System.Boolean)" Advising="#1" Description="#30" Ordinal="13" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#33=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Queries.Utils.SqlQueryUtils::GetCommaSeperatedValues(System.Collections.Generic.IEnumerable{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ColumnValue})@columns" Id="9b42f15e84771ecc">
+      <Target>
+        <JoinPoint Advised="#34=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Queries.Utils.SqlQueryUtils::GetCommaSeperatedValues(System.Collections.Generic.IEnumerable{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ColumnValue})" Advising="#1" Description="#30" Ordinal="14" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#35=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.CreateTableDescription::#ctor([CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView, System.Data.SqlClient.SqlConnection)@ormType" Id="9b42f15e04ef4303">
+      <Target>
+        <JoinPoint Advised="#36=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.CreateTableDescription::#ctor([CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView, System.Data.SqlClient.SqlConnection)" Advising="#1" Description="#37=Validates the value passed to parameter 'ormType'" Ordinal="16" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#38=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ColumnValue::#ctor([CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.IColumnDescription, System.Object)@columnDescription" Id="9b42f15eff3f0b61">
+      <Target>
+        <JoinPoint Advised="#39=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ColumnValue::#ctor([CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.IColumnDescription, System.Object)" Advising="#1" Description="#40=Validates the value passed to parameter 'columnDescription'" Ordinal="17" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#41=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView::GetRootIdentityModel(System.Type)@tModel" Id="9b42f15ef5b9cd9e">
+      <Target>
+        <JoinPoint Advised="#42=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView::GetRootIdentityModel(System.Type)" Advising="#1" Description="#43=Validates the value passed to parameter 'tModel'" Ordinal="32" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#44=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.Base.TableScopedQueryDescription::#ctor([CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView, System.Data.SqlClient.SqlConnection, System.String, System.String)@ormType" Id="9b42f15e75f865ff">
+      <Target>
+        <JoinPoint Advised="#45=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.Base.TableScopedQueryDescription::#ctor([CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView, System.Data.SqlClient.SqlConnection, System.String, System.String)" Advising="#1" Description="#37" Ordinal="15" LinesAvoided="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#46=T:[CVB.NET.Reflection.Aspects]CVB.NET.Reflection.Aspects.ParameterValidation.ImplementsInterfaceAttribute">
+    <Instance Declaration="#47=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.Attributes.DefaultPrimitiveSerializerAttribute::#ctor(System.Type)@primitiveSerializerType" Id="9b42f15ef7407e56">
+      <Target>
+        <JoinPoint Advised="#48=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.Attributes.DefaultPrimitiveSerializerAttribute::#ctor(System.Type)" Advising="#46" Description="#49=Validates the value passed to parameter 'primitiveSerializerType'" Ordinal="33" LinesAvoided="1" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#50=T:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Aspect.ReflectionViewAspect">
+    <Instance Declaration="#51=A:CVB.NET.DataAccess" ForwardRef="true" Id="9269406ec646bd3f">
+      <Target Target="#52=T:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView">
+        <JoinPoint Advised="#53=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView::get_TableName()" Advising="#50" Description="#54=Intercepted by advice OnPropertyGet" Semantic="Getter" Ordinal="18" LinesAvoided="2" />
+        <JoinPoint Advised="#55=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView::get_TablePrimaryKeyDescriptions()" Advising="#50" Description="#54" Semantic="Getter" Ordinal="20" LinesAvoided="2" />
+        <JoinPoint Advised="#56=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView::get_TableForeignKeyDescriptions()" Advising="#50" Description="#54" Semantic="Getter" Ordinal="22" LinesAvoided="2" />
+        <JoinPoint Advised="#57=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView::get_PrimitiveColumnDescriptions()" Advising="#50" Description="#54" Semantic="Getter" Ordinal="24" LinesAvoided="2" />
+        <JoinPoint Advised="#58=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView::get_TableDescription()" Advising="#50" Description="#54" Semantic="Getter" Ordinal="26" LinesAvoided="2" />
+        <JoinPoint Advised="#59=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView::get_HasTypeReferencePropertyInfo()" Advising="#50" Description="#54" Semantic="Getter" Ordinal="28" LinesAvoided="2" />
+        <JoinPoint Advised="#60=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView::get_TypeReferencePropertyInfo()" Advising="#50" Description="#54" Semantic="Getter" Ordinal="30" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#51" ForwardRef="true" Id="9269406e051832cd">
+      <Target Target="#52">
+        <JoinPoint Advised="#53" Advising="#50" Description="#54" Semantic="Getter" Ordinal="19" LinesAvoided="2" />
+        <JoinPoint Advised="#55" Advising="#50" Description="#54" Semantic="Getter" Ordinal="21" LinesAvoided="2" />
+        <JoinPoint Advised="#56" Advising="#50" Description="#54" Semantic="Getter" Ordinal="23" LinesAvoided="2" />
+        <JoinPoint Advised="#57" Advising="#50" Description="#54" Semantic="Getter" Ordinal="25" LinesAvoided="2" />
+        <JoinPoint Advised="#58" Advising="#50" Description="#54" Semantic="Getter" Ordinal="27" LinesAvoided="2" />
+        <JoinPoint Advised="#59" Advising="#50" Description="#54" Semantic="Getter" Ordinal="29" LinesAvoided="2" />
+        <JoinPoint Advised="#60" Advising="#50" Description="#54" Semantic="Getter" Ordinal="31" LinesAvoided="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#1">
+    <Instance Declaration="#61=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Read([CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.GenericModel.IGenericModel{TOrmTypeView})@model" Id="de117d617916224c">
+      <Target Target="#62=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.MsSqlQueryableCrudRepository{TScheme}::Read(CVB.NET.DataAccess.Repository.GenericModel.IGenericModel{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView})@model">
+        <JoinPoint Advised="#63=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.MsSqlQueryableCrudRepository{TScheme}::Read(CVB.NET.DataAccess.Repository.GenericModel.IGenericModel{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView})" Advising="#1" Description="#64=Validates the value passed to parameter 'model'" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#65=R:[CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.Base.QueryableCrudRepositoryBase{TScheme,TOrmTypeView}::Exists([CVB.NET.DataAccess]CVB.NET.DataAccess.Repository.GenericModel.IGenericModel{TOrmTypeView})@model" Id="de117d61138a3059">
+      <Target Target="#66=R:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.MsSqlQueryableCrudRepository{TScheme}::Exists(CVB.NET.DataAccess.Repository.GenericModel.IGenericModel{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView})@model">
+        <JoinPoint Advised="#67=M:[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.MsSqlQueryableCrudRepository{TScheme}::Exists(CVB.NET.DataAccess.Repository.GenericModel.IGenericModel{[CVB.NET.DataAccess.Sql]CVB.NET.DataAccess.Sql.T4Queries.Model.MetaData.Views.OrmSqlTypeMetaDataView})" Advising="#1" Description="#64" Ordinal="2" LinesAvoided="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#68=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute::ValidateValue(System.Object, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#69=2" Description="#70=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#71=M:[CVB.NET.Reflection.Caching]CVB.NET.Reflection.Caching.Aspect.ReflectionViewAspect::OnPropertyGet(PostSharp.Aspects.LocationInterceptionArgs)" Arguments="#69" Description="#70" />
+</Symbols>

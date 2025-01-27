@@ -1,0 +1,15 @@
+﻿<#@ template debug="true" inherits="CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase<DeleteRecordDescription>" language="C#" #>
+<#@ output extension=".sql" #>
+<#/*Imports*/#>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Model" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Queries.Utils" #>
+
+<# foreach(KeyValuePair<string, List<ColumnValue>> tablePrimaryKeysPair in Description.TablePrimaryKeys)
+   { #>
+		<#/*Delete Record*/#>
+		DELETE FROM [<#= Description.Schema #>].[<#= tablePrimaryKeysPair.Key #>]
+		WHERE <#= SqlQueryUtils.MakeSqlCausalityChain(tablePrimaryKeysPair.Key, tablePrimaryKeysPair.Value, LogicalOperator.And) #>;
+<# } #>
+

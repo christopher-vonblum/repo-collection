@@ -1,0 +1,3 @@
+﻿Regeln zum implementieren eines interfaces werden in Attributes festgehalten.
+Die Attributes werden auf interfaces und deren member gesetzt.
+Ein Testtool kann die Tests auf den interfaces einlesen und die passenden Tests durchführen.

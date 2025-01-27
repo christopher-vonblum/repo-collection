@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Description>
+      ** C# 9.0 ONLY **
+      Autogenerates public methods from a class .
+      ( replace below single quotes with double quotes)
+      [AutoMethods(template = TemplateMethod.CallerAtttributes, MethodPrefix ='pub', MethodSuffix ='bup')]
+      partial class Person
+      {
+      public string LastName { get; set; }
+      public string FirstName { get; set; }
+      private string pubFullName()
+      {
+
+      return FirstName + ' ' + LastName;
+      }
+
+      private void pubWriteToConsoleFullName()
+      {
+      Console.WriteLine(this.FullName());
+      }
+
+
+      }
+      // it will generate for this class the public methods
+      public string FullName
+      public string WriteToConsoleFullName
+      Add also Nuget package AOPMethodsGenerator
+      You can have your own template - read the readme.txt
+    </Description>
+    <Version>2022.5.20.2101</Version>
+    <Authors>Andrei Ignat</Authors>
+    <PackageTags>RoslynCodeGenerators;C#;CSharp;SkinnyControllers</PackageTags>
+    <PackageProjectUrl>https://github.com/ignatandrei/AOP_With_Roslyn/tree/master/AOPMethods</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ignatandrei/AOP_With_Roslyn</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>MIT</Copyright>
+
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Scriban" Version="4.0.1" />
+  </ItemGroup>
+
+</Project>

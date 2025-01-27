@@ -1,0 +1,14 @@
+﻿<#@ template language="C#" inherits="CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase<UpdateRecordDescription>" #>
+<#@ output extension=".sql" #>
+<#/*Imports*/#>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Model" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Queries.Utils" #>
+
+<# foreach(KeyValuePair<string, List<ColumnValue>> tableValue in Description.TableValues)
+   { #>
+	UPDATE [<#= Description.Schema #>].[<#= tableValue.Key #>]
+	SET <#= SqlQueryUtils.MakeSqlCausalityChain(tableValue.Key, tableValue.Value, LogicalOperator.Enumeration) #>
+	WHERE <#= SqlQueryUtils.MakeSqlCausalityChain(tableValue.Key, Description.Keys, LogicalOperator.And) #>;
+<# } #>

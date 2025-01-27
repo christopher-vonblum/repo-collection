@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51DC2F92-5D4E-41C3-B296-C7D65B11AB68}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CVB.NET.Abstractions</RootNamespace>
+    <AssemblyName>CVB.NET.Abstractions</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Ioc\Container\Context\DictionaryExecutionContext.cs" />
+    <Compile Include="src\Ioc\Container\Context\ExecutionContext.cs" />
+    <Compile Include="src\Ioc\Container\Registration\Extension\AutoInjectProperties.cs" />
+    <Compile Include="src\Ioc\Container\Registration\Extension\BasicLifestyle.cs" />
+    <Compile Include="src\Ioc\Container\Registration\Extension\AutoInjectMethods.cs" />
+    <Compile Include="src\Ioc\Container\Registration\Extension\BasicLifestyleExtension.cs" />
+    <Compile Include="src\Ioc\Container\Context\IExecutionContext.cs" />
+    <Compile Include="src\Ioc\Base\IIocContainerAdapter.cs" />
+    <Compile Include="src\Ioc\Base\IIocInjectionProvider.cs" />
+    <Compile Include="src\Ioc\Base\IIocMetaProvider.cs" />
+    <Compile Include="src\Ioc\Container\Registration\IIocRegistrationContext.cs" />
+    <Compile Include="src\Ioc\IDependencyInjectionProvider.cs" />
+    <Compile Include="src\Ioc\IDependencyInstaller.cs" />
+    <Compile Include="src\Ioc\IDependencyResolver.cs" />
+    <Compile Include="src\Ioc\IDependencyService.cs" />
+    <Compile Include="src\Ioc\IDependencySetup.cs" />
+    <Compile Include="src\Ioc\Injection\InjectionProviderBase.cs" />
+    <Compile Include="src\Ioc\Container\Base\IocContainerAdapterBase.cs" />
+    <Compile Include="src\Ioc\Container\Base\IocMetaProviderBase.cs" />
+    <Compile Include="src\Ioc\Container\Registration\RegistrationContext.cs" />
+    <Compile Include="src\Ioc\Container\Registration\Extension\Base\IRegistrationExtension.cs" />
+    <Compile Include="src\Ioc\Container\Registration\IRegistrationInstruction.cs" />
+    <Compile Include="src\Ioc\Container\Registration\Extension\NamedInstanceExtension.cs" />
+    <Compile Include="src\Ioc\Container\Registration\Extension\Base\RegistrationExtensionBase.cs" />
+    <Compile Include="src\Ioc\Container\Registration\IRegistrationInstructionProxy.cs" />
+    <Compile Include="src\Ioc\Container\Registration\Extension\ManualInjection.cs" />
+    <Compile Include="src\Ioc\Container\Registration\Extension\MixedConstruction.cs" />
+    <Compile Include="src\Ioc\Container\Registration\RegistrationInstruction.cs" />
+    <Compile Include="src\Ioc\Container\Registration\RegistrationInstructionExtensions.cs" />
+    <Compile Include="src\Ioc\Container\Registration\RegistrationInstructionProxy.cs" />
+    <Compile Include="src\Ioc\Container\Context\UsableContext.cs" />
+    <Compile Include="src\Ioc\Injection\Attribute\DependencyInjectionTargetAttribute.cs" />
+    <Compile Include="src\Ioc\Injection\Attribute\NamedDependencyInjectionTargetAttribute.cs" />
+    <Compile Include="src\Ioc\Injection\Parameter\Arg.cs" />
+    <Compile Include="src\Ioc\Injection\Parameter\ArgContainerContext.cs" />
+    <Compile Include="src\Ioc\Injection\DependencyInjectionHelper.cs" />
+    <Compile Include="src\Ioc\Injection\Lambda\DependencyInjectionLambdaGenerator.cs" />
+    <Compile Include="src\Ioc\Injection\IDependencyInjectionHelper.cs" />
+    <Compile Include="src\Ioc\Injection\Lambda\IDependencyInjectionLambdaGenerator.cs" />
+    <Compile Include="src\Ioc\Base\IIocContainer.cs" />
+    <Compile Include="src\Ioc\Registration\Information\Instance\InstanceInformation.cs" />
+    <Compile Include="src\Ioc\Registration\Information\IRegistrationInformation.cs" />
+    <Compile Include="src\Ioc\Registration\Information\Lifestyle\IRegistrationLifestyleInformation.cs" />
+    <Compile Include="src\Ioc\Registration\Information\Lifestyle\SingletonLifestyle.cs" />
+    <Compile Include="src\Ioc\Registration\Information\Lifestyle\TransientLifestyle.cs" />
+    <Compile Include="src\Ioc\Registration\Information\Name\NameInformation.cs" />
+    <Compile Include="src\Ioc\Registration\Information\RegistrationInformationBase.cs" />
+    <Compile Include="src\Ioc\Registration\IRegistration.cs" />
+    <Compile Include="src\Ioc\Registration\Registration.cs" />
+    <Compile Include="src\Ioc\Registration\RegistrationExtensions.cs" />
+    <Compile Include="src\Ioc\Registration\Service.cs" />
+    <Compile Include="src\SafeAction.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SafeAction.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\SafeAction.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SafeAction.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CVB.NET.Reflection.Caching\CVB.NET.Reflection.Caching.csproj">
+      <Project>{1e0aa781-76cd-4171-ae6a-82c8a4609d7c}</Project>
+      <Name>CVB.NET.Reflection.Caching</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\Ioc\Container\Extension\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

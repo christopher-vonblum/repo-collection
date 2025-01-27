@@ -1,0 +1,19 @@
+--- scripts/kconfig/symbol.c
++++ scripts/kconfig/symbol.c
+@@ -301,7 +301,7 @@
+ 	struct gstr gs = str_new();
+ 
+ 	str_printf(&gs,
+-		   "\nWARNING: unmet direct dependencies detected for %s\n",
++		   "\nERROR: unmet direct dependencies detected for %s\n",
+ 		   sym->name);
+ 	str_printf(&gs,
+ 		   "  Depends on [%c]: ",
+@@ -316,6 +316,7 @@
+ 
+ 	fputs(str_get(&gs), stderr);
+ 	sym_warnings++;
++	exit(1);
+ }
+ 
+ bool sym_dep_errors(void)

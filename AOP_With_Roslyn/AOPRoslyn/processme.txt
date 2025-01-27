@@ -1,0 +1,35 @@
+{
+  "$type": "AOPRoslyn.RewriteCodeFolder, AOPRoslyn",
+  "ExcludeFileNames": ["TestClassPerson.cs","TestClassPersonWithArguments.cs","AOPMethod.cs","GatherStatistics.cs"],
+  "FolderName": "@static:Environment.CurrentDirectory@",
+  "SearchPattern": "*.cs",
+"AddDefaultArguments": "true",
+  "Formatter": {
+    "$type": "AOPRoslyn.AOPFormatter, AOPRoslyn",
+    "FormatArguments": {
+      "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
+    },
+	"MethodsToLog":1,
+    "AddDefaultArguments": true,
+    "FormatterFirstLine": "
+	//using(new AOPStatistics.AOPMethod(\"{nameClass}\",\"{nameMethod}\",{lineStartNumber})){{
+	try
+	{{
+	System.Console.WriteLine(\"start method {nameClass}_{nameMethod}_{lineStartNumber}\");System.Console.WriteLine(\"!!!arguments \" + {arguments});
+	",
+    "FormatterLastLine": "
+	}}//try
+	catch(System.Exception ex)
+	{{
+	System.Console.WriteLine(\"error in{nameClass}_{nameMethod}_{lineStartNumber}:\" + ex.Message);throw;}}finally{{System.Console.WriteLine(\"end method {nameClass}_{nameMethod}_{lineStartNumber}\");
+	}}
+	//}}//using
+	"
+  },
+  "Options": {
+    "$type": "AOPRoslyn.RewriteOptions, AOPRoslyn",
+    "PreserveLinesNumber": true,
+    "NoArguments": "\"No arguments in method {nameMethod} line {lineStartNumber}  class {nameClass}\"",
+    "ArgumentSeparator": "+"
+  }
+}

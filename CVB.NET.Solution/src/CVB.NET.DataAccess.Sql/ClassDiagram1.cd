@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CVB.NET.DataAccess.Sql.T4Queries.Model.UpdateRecordDescription">
+    <Position X="6" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAQAAEAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>src\T4Queries\Model\UpdateRecordDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.T4Queries.Model.Base.DatabaseScopedQueryDescription">
+    <Position X="13.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\T4Queries\Model\Base\DatabaseScopedQueryDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.T4Queries.Model.Base.SchemaScopedQueryDescription">
+    <Position X="13.25" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\T4Queries\Model\Base\SchemaScopedQueryDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.T4Queries.Model.Base.TableScopedQueryDescription">
+    <Position X="17.75" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\T4Queries\Model\Base\TableScopedQueryDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.T4Queries.Model.CreateTableDescription">
+    <Position X="17.75" Y="10" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>src\T4Queries\Model\CreateTableDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.T4Queries.Model.DeleteRecordDescription">
+    <Position X="14.75" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>src\T4Queries\Model\DeleteRecordDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.T4Queries.Model.InsertRecordDescription">
+    <Position X="12" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\T4Queries\Model\InsertRecordDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.T4Queries.Model.SelectRecordDescription">
+    <Position X="9" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACABAQAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>src\T4Queries\Model\SelectRecordDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ColumnDescription" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAADAAAAAQCAAAAIAAQAABAAAAAAAQIIAAAAAAA=</HashCode>
+      <FileName>src\T4Queries\Model\SubModels\ColumnDescription.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.ColumnValue" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAACAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>src\T4Queries\Model\SubModels\ColumnValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels.INamedColumn" Collapsed="true">
+    <Position X="12.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\T4Queries\Model\SubModels\INamedColumn.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

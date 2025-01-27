@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="51" PostSharpLinesOfCode="0" EnhancedTypesCount="2" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute">
+    <Instance Declaration="#2=R:[CVB.NET.Utils]CVB.NET.Utils.String.PathUtil::MapPhysicalPath(System.String, System.String)@physicalRootPath" Id="2494d005f0663584">
+      <Target>
+        <JoinPoint Advised="#3=M:[CVB.NET.Utils]CVB.NET.Utils.String.PathUtil::MapPhysicalPath(System.String, System.String)" Advising="#1" Description="#4=Validates the value passed to parameter 'physicalRootPath'" Ordinal="0" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#5=R:[CVB.NET.Utils]CVB.NET.Utils.String.PathUtil::MapPhysicalPath(System.String, System.String)@virtualSubPath" Id="2494d0050f0d83bc">
+      <Target>
+        <JoinPoint Advised="#3" Advising="#1" Description="#6=Validates the value passed to parameter 'virtualSubPath'" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#7=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureSinglePrefix(System.String, System.String)@prefix" Id="2494d005252bd636">
+      <Target>
+        <JoinPoint Advised="#8=M:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureSinglePrefix(System.String, System.String)" Advising="#1" Description="#9=Validates the value passed to parameter 'prefix'" Ordinal="3" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#10=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsurePrefix(System.String, System.String)@prefix" Id="2494d005e0a1fbfe">
+      <Target>
+        <JoinPoint Advised="#11=M:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsurePrefix(System.String, System.String)" Advising="#1" Description="#9" Ordinal="5" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#12=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureSingleSuffix(System.String, System.String)@suffix" Id="2494d005902b6ce2">
+      <Target>
+        <JoinPoint Advised="#13=M:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureSingleSuffix(System.String, System.String)" Advising="#1" Description="#14=Validates the value passed to parameter 'suffix'" Ordinal="7" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#15=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureSuffix(System.String, System.String)@suffix" Id="2494d005d7228a10">
+      <Target>
+        <JoinPoint Advised="#16=M:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureSuffix(System.String, System.String)" Advising="#1" Description="#14" Ordinal="9" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#17=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureNoPrefix(System.String, System.String)@prefix" Id="2494d005f1be6552">
+      <Target>
+        <JoinPoint Advised="#18=M:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureNoPrefix(System.String, System.String)" Advising="#1" Description="#9" Ordinal="11" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#19=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureNoPrefixes(System.String, System.String)@prefix" Id="2494d0052a723658">
+      <Target>
+        <JoinPoint Advised="#20=M:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureNoPrefixes(System.String, System.String)" Advising="#1" Description="#9" Ordinal="13" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#21=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureNoSuffix(System.String, System.String)@suffix" Id="2494d0057a70616f">
+      <Target>
+        <JoinPoint Advised="#22=M:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureNoSuffix(System.String, System.String)" Advising="#1" Description="#14" Ordinal="15" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#23=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureNoSuffixes(System.String, System.String)@suffix" Id="2494d00541c1d88b">
+      <Target>
+        <JoinPoint Advised="#24=M:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureNoSuffixes(System.String, System.String)" Advising="#1" Description="#14" Ordinal="17" LinesAvoided="4" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#25=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute">
+    <Instance Declaration="#26=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureSinglePrefix(System.String, System.String)@value" Id="2494d005f6c08e60">
+      <Target>
+        <JoinPoint Advised="#8" Advising="#25" Description="#27=Validates the value passed to parameter 'value'" Ordinal="2" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#28=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsurePrefix(System.String, System.String)@value" Id="2494d005280a6a18">
+      <Target>
+        <JoinPoint Advised="#11" Advising="#25" Description="#27" Ordinal="4" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#29=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureSingleSuffix(System.String, System.String)@value" Id="2494d0051ab69968">
+      <Target>
+        <JoinPoint Advised="#13" Advising="#25" Description="#27" Ordinal="6" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#30=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureSuffix(System.String, System.String)@value" Id="2494d005e719b306">
+      <Target>
+        <JoinPoint Advised="#16" Advising="#25" Description="#27" Ordinal="8" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#31=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureNoPrefix(System.String, System.String)@value" Id="2494d00539fa9df2">
+      <Target>
+        <JoinPoint Advised="#18" Advising="#25" Description="#27" Ordinal="10" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#32=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureNoPrefixes(System.String, System.String)@value" Id="2494d005f24d18df">
+      <Target>
+        <JoinPoint Advised="#20" Advising="#25" Description="#27" Ordinal="12" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#33=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureNoSuffix(System.String, System.String)@value" Id="2494d0051e6b6f0d">
+      <Target>
+        <JoinPoint Advised="#22" Advising="#25" Description="#27" Ordinal="14" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#34=R:[CVB.NET.Utils]CVB.NET.Utils.String.StringUtil::EnsureNoSuffixes(System.String, System.String)@value" Id="2494d005c87b85e6">
+      <Target>
+        <JoinPoint Advised="#24" Advising="#25" Description="#27" Ordinal="16" LinesAvoided="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#35=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute::ValidateValueString(System.String, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#36=2" Description="#37=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#38=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute::ValidateValueCollection(System.Collections.ICollection, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#36" Description="#37" />
+  <Annotation Target="#39=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute::ValidateValue(System.Object, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#36" Description="#37" />
+</Symbols>

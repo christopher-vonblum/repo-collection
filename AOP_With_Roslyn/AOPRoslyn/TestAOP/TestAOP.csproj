@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="coveragereport\**" />
+    <EmbeddedResource Remove="coveragereport\**" />
+    <None Remove="coveragereport\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ClassesForTesting\TestClassYield.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClassesForTesting\TestClassYield.cs.expected" />
+    <None Remove="coverage.opencover.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClassesForTesting\TestClassYield.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClassesForTesting\TestClassYield.cs.expected">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+      <PackageReference Include="coverlet.msbuild" Version="2.1.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="2.8.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
+    <PackageReference Include="PortableConsoleLibs" Version="1.0.0" />
+    <PackageReference Include="Shouldly" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AOPRoslyn\AOPRoslyn.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ClassesForTesting\TestClassPersonWithArguments.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="ClassesForTesting\TestClassPerson.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ClassesForTesting\TestClassPerson.cs.expected">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ClassesForTesting\TestClassPersonWithArguments.cs.expected">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+ 
+
+</Project>

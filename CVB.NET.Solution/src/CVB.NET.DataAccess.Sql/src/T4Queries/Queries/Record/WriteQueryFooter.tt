@@ -1,0 +1,6 @@
+﻿<#@ template language="C#" inherits="CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase<SchemaScopedQueryDescription>" #>
+<#@ output extension=".sql" #>
+<#/*Imports*/#>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Model.Base" #>
+
+COMMIT TRAN writeTransaction

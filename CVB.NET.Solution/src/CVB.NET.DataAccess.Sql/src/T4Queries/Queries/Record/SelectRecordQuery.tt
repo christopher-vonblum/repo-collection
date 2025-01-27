@@ -1,0 +1,46 @@
+﻿<#@ template language="C#" inherits="CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase<SelectRecordDescription>" #>
+<#@ output extension=".sql" #>
+<#/*Imports*/#>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Model" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Queries.Utils" #>
+<#/*Select Values*/
+	string firstTable = Description.Tables.First();
+	 #>  
+
+<# if (Description.Tables.Count > 1)
+{ 
+		Description.Tables.Remove(firstTable);#>                                                      <# /* Miss out the comma if there are no values*/ #>
+		SELECT <#= SqlQueryUtils.GetJoinPrimaryKeys(Description.Keys, "T1") #>
+		<# if (Description.Values.Any()) { #>, <#= SqlQueryUtils.GetSeperatedColumnNames(Description.Values, ", ", true) #><# } #>
+		  FROM [<#= Description.Schema #>].[<#= firstTable #>] as T1
+		<# int i = 2;
+		foreach (string table in Description.Tables)
+		{ #>
+			INNER JOIN [<#= Description.Schema #>].[<#= table #>] as T<#= i.ToString() #> ON 
+		
+			<# ColumnValue lastKey = Description.Keys.Last();
+			ColumnValue firstKey = Description.Keys.First();
+			foreach (ColumnValue primaryKey in Description.Keys)
+			{
+				if (primaryKey != lastKey && primaryKey != firstKey)
+				{
+					Write(" AND ");
+				} #>
+							T<#= i.ToString() #>.[<#= primaryKey.Name #>] = T1.[<#= primaryKey.Name #>]
+					<# } #>
+
+			
+			<# i++;
+		} #>
+		WHERE <#=
+    SqlQueryUtils.MakeSqlCausalityChain("T1", Description.Keys, LogicalOperator.And) #>
+<# }
+else
+{ #>
+		SELECT * <#/*= SqlQueryUtils.GetJoinPrimaryKeys(Description.Keys, firstTable) */#>
+		<# if (Description.Values.Any()) { #>, <#= SqlQueryUtils.GetSeperatedColumnNames(Description.Values, ", ", true) #><# } #>
+		FROM [<#= Description.Schema #>].[<#= firstTable #>]
+		WHERE <#= SqlQueryUtils.MakeSqlCausalityChain(firstTable, Description.Keys, LogicalOperator.And) #>
+<# } #>

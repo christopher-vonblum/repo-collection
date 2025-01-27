@@ -1,0 +1,57 @@
+# ASP.NET Core
+# Build and test ASP.NET Core web applications targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/vsts/pipelines/languages/dotnet-core
+#https://dev.azure.com/ignatandrei1970/AOPRoslyn/
+pool:
+  vmImage: 'VS2017-Win2016'
+
+variables:
+  buildConfiguration: 'Release'
+  deployNuget: '0'
+
+steps:
+ 
+
+- script: | 
+    cd AOPRoslyn 
+    dotnet tool restore 
+  displayName: 'restore tool'
+- script: dotnet restore AOPRoslyn\AOPRoslyn.sln
+  displayName: 'restore project'
+- script:  | 
+    cd AOPRoslyn 
+    dotnet tool run pwsh -f ./makenuget.ps1
+  displayName: 'powershell to version and pack'
+- script: dotnet build AOPRoslyn\AOPRoslyn.sln --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
+- script: dotnet pack AOPRoslyn\aopCmd\aop.csproj  --no-build -o $(Build.ArtifactStagingDirectory) /p:Configuration=$(buildConfiguration) # --verbosity Detailed
+  displayName: 'dotnet pack '
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: drop1
+
+# - task: NuGetAuthenticate@0
+#   inputs:
+#     nuGetServiceConnections: 'nugetAndrei'
+
+- task: NuGetCommand@2
+  condition: and(succeeded(), eq(variables['deployNuget'], '1'))
+  inputs:
+    command: push
+    nuGetFeedType: external
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg'
+    publishFeedCredentials: 'nugetAndrei'
+  displayName: 'dotnet nuget push'
+
+# - task: DotNetCoreCLI@2
+#   displayName: Push Nuget Package
+#   inputs:
+#     command: custom
+#     custom: nuget
+#     arguments: >
+#       push $(Build.ArtifactStagingDirectory)\*.nupkg
+#       -s https://api.nuget.org/v3/index.json
+#       -k $(NuGetSourceServerApiKey)

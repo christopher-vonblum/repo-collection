@@ -1,0 +1,21 @@
+﻿<#@ template language="C#" inherits="CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase<InsertRecordDescription>" #>
+<#@ output extension=".sql" #>
+<#/*Imports*/#>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Model" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Queries.Utils" #>
+
+<#/*Insert Values*/#>
+<# foreach(KeyValuePair<string, List<ColumnValue>> tableColumnsPair in Description.TableValues)
+   { #>
+		INSERT INTO [<#= Description.Schema #>].[<#= tableColumnsPair.Key #>]
+		(
+			<#= SqlQueryUtils.GetSeperatedColumnNames(tableColumnsPair.Value, ", ", true) #>
+		)
+		VALUES
+		(
+			<#= SqlQueryUtils.GetCommaSeperatedValues(tableColumnsPair.Value) #>
+		);
+
+<# } #>

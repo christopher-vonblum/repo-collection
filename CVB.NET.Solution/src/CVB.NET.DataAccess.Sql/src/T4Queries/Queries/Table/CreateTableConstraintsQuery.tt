@@ -1,0 +1,21 @@
+﻿<#@ template debug="true" inherits="CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase<ITableDescription>"  language="C#" #>
+<#@ output extension=".sql" #>
+<#/*Imports*/#>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Model.SubModels" #>
+<#@ import namespace="CVB.NET.DataAccess.Sql.T4Queries.Queries.Utils" #>
+
+<#/*Set Foreign Keys*/#>
+<# foreach(KeyValuePair<string, List<IColumnDescription>> columnGroup in Description.ForeignKeyDescriptionsGroupedByTable)
+   { #>
+		ALTER TABLE [<#= Description.Schema #>].[<#= Description.Table #>]
+		ADD CONSTRAINT [FK___TABLE_<#= Description.Table #>_<#= SqlQueryUtils.GetSeperatedColumnNames(columnGroup.Value, "_", false) #>___REFS_<#= columnGroup.Key #>_<#= SqlQueryUtils.GetSeperatedReferenceColumnNames(columnGroup.Value, "_", false) #>]
+			FOREIGN KEY
+			(
+				<#= SqlQueryUtils.GetSeperatedColumnNames(columnGroup.Value, ", ", true) #>
+			)
+			REFERENCES [<#= Description.Schema #>].[<#= columnGroup.Key #>]
+			(
+				<#= SqlQueryUtils.GetSeperatedReferenceColumnNames(columnGroup.Value, ", ", true) #>
+			);
+<# } #>

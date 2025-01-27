@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="272" PostSharpLinesOfCode="0" EnhancedTypesCount="7" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute">
+    <Instance Declaration="#2=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Runtime.Base.IT4Template::Process(System.Collections.Generic.IDictionary{System.String,System.Object})@arguments" Id="3ecf86d0376609f3">
+      <Target Target="#3=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase::Process(System.Collections.Generic.IDictionary{System.String,System.Object})@arguments">
+        <JoinPoint Advised="#4=M:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase::Process(System.Collections.Generic.IDictionary{System.String,System.Object})" Advising="#1" Description="#5=Validates the value passed to parameter 'arguments'" Ordinal="2" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#6=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Runtime.Base.IT4Template{TParameterType}::Process(TParameterType)@argumentObject" Id="3ecf86d0bef05ace">
+      <Target Target="#7=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase{TParameterType}::Process(TParameterType)@argumentObject">
+        <JoinPoint Advised="#8=M:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase{TParameterType}::Process(TParameterType)" Advising="#1" Description="#9=Validates the value passed to parameter 'argumentObject'" Ordinal="5" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#10=P:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Runtime.Base.ToStringInstanceHelper::FormatProvider()" Id="3ecf86d047ac31ba">
+      <Target>
+        <JoinPoint Advised="#11=M:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Runtime.Base.ToStringInstanceHelper::set_FormatProvider(System.IFormatProvider)" Advising="#1" Description="#12=Validates the assigned value" Semantic="Setter" Ordinal="0" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#13=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase::PushIndent(System.String)@indent" Id="3ecf86d0bd44140b">
+      <Target>
+        <JoinPoint Advised="#14=M:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Runtime.Base.QueryTemplateBase::PushIndent(System.String)" Advising="#1" Description="#15=Validates the value passed to parameter 'indent'" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#16=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Utils.TextTransformationExtensions::Include(Microsoft.VisualStudio.TextTemplating.TextTransformation, System.String, System.Collections.Generic.IDictionary{System.String,System.Object})@textTransformation" Id="3ecf86d0c2df5d6e">
+      <Target>
+        <JoinPoint Advised="#17=M:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Utils.TextTransformationExtensions::Include(Microsoft.VisualStudio.TextTemplating.TextTransformation, System.String, System.Collections.Generic.IDictionary{System.String,System.Object})" Advising="#1" Description="#18=Validates the value passed to parameter 'textTransformation'" Ordinal="3" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#19=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Base.ITextTemplatingProvider::ProcessTemplate(System.String, System.Object)@transformationModel" Id="3ecf86d0d4d149f6">
+      <Target Target="#20=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Provider.T4TextTemplatingProvider::ProcessTemplate(System.String, System.Object)@transformationModel">
+        <JoinPoint Advised="#21=M:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Provider.T4TextTemplatingProvider::ProcessTemplate(System.String, System.Object)" Advising="#1" Description="#22=Validates the value passed to parameter 'transformationModel'" Ordinal="8" LinesAvoided="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#23=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Base.ITextTemplatingProvider::ProcessTemplate(System.String, System.Collections.Generic.IDictionary{System.String,System.Object})@arguments" Id="3ecf86d07e3c80ef">
+      <Target Target="#24=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Provider.T4TextTemplatingProvider::ProcessTemplate(System.String, System.Collections.Generic.IDictionary{System.String,System.Object})@arguments">
+        <JoinPoint Advised="#25=M:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Provider.T4TextTemplatingProvider::ProcessTemplate(System.String, System.Collections.Generic.IDictionary{System.String,System.Object})" Advising="#1" Description="#5" Ordinal="10" LinesAvoided="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#26=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute">
+    <Instance Declaration="#27=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Utils.TextTransformationExtensions::Include(Microsoft.VisualStudio.TextTemplating.TextTransformation, System.String, System.Collections.Generic.IDictionary{System.String,System.Object})@templatePath" Id="3ecf86d07b1d4402">
+      <Target>
+        <JoinPoint Advised="#17" Advising="#26" Description="#28=Validates the value passed to parameter 'templatePath'" Ordinal="4" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#29=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Provider.T4TextTemplatingProvider::#ctor(System.String)@physicalRootPath" Id="3ecf86d0b3c35e7a">
+      <Target>
+        <JoinPoint Advised="#30=M:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Provider.T4TextTemplatingProvider::#ctor(System.String)" Advising="#26" Description="#31=Validates the value passed to parameter 'physicalRootPath'" Ordinal="6" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#32=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Base.ITextTemplatingProvider::ProcessTemplate(System.String, System.Object)@templateFilePath" Id="3ecf86d0c276a4f9">
+      <Target Target="#33=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Provider.T4TextTemplatingProvider::ProcessTemplate(System.String, System.Object)@templateFilePath">
+        <JoinPoint Advised="#21" Advising="#26" Description="#34=Validates the value passed to parameter 'templateFilePath'" Ordinal="7" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#35=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Base.ITextTemplatingProvider::ProcessTemplate(System.String, System.Collections.Generic.IDictionary{System.String,System.Object})@templateFilePath" Id="3ecf86d0f01394d2">
+      <Target Target="#36=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Provider.T4TextTemplatingProvider::ProcessTemplate(System.String, System.Collections.Generic.IDictionary{System.String,System.Object})@templateFilePath">
+        <JoinPoint Advised="#25" Advising="#26" Description="#34" Ordinal="9" LinesAvoided="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#37=R:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Attributes.TemplatePathAttribute::#ctor(System.String)@templatePath" Id="3ecf86d037418f80">
+      <Target>
+        <JoinPoint Advised="#38=M:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.Attributes.TemplatePathAttribute::#ctor(System.String)" Advising="#26" Description="#28" Ordinal="11" LinesAvoided="4" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#39=T:[CVB.NET.Aspects]CVB.NET.Aspects.Patterns.AutoDictionaryWrapper.AutoDictionaryWrapperAspect">
+    <Instance Declaration="#40=T:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.DefaultSessionParameters" Id="3ecf86d03ce80487">
+      <Target Target="#41=P:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.DefaultSessionParameters::PhysicalRootPath()">
+        <JoinPoint Advised="#42=M:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.DefaultSessionParameters::get_PhysicalRootPath()" Advising="#39" Description="#43=Intercepted by advice OnGetValue" Semantic="Getter" Ordinal="12" />
+      </Target>
+      <Target Target="#44=P:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.DefaultSessionParameters::WrappedDictionary()">
+        <JoinPoint Advised="#45=M:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.DefaultSessionParameters::get_WrappedDictionary()" Advising="#39" Description="#43" Semantic="Getter" Ordinal="13" />
+      </Target>
+      <Target Target="#46=P:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.DefaultSessionParameters::Session()">
+        <JoinPoint Advised="#47=M:[CVB.NET.TextTemplating]CVB.NET.TextTemplating.Hosted.DefaultSessionParameters::get_Session()" Advising="#39" Description="#43" Semantic="Getter" Ordinal="14" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#48=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute::ValidateValue(System.Object, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#49=2" Description="#50=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#51=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute::ValidateValueString(System.String, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#49" Description="#50" />
+  <Annotation Target="#52=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotEmptyAttribute::ValidateValueCollection(System.Collections.ICollection, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#49" Description="#50" />
+</Symbols>

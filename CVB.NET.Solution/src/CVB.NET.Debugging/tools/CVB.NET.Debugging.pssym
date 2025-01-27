@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="6" PostSharpLinesOfCode="0" EnhancedTypesCount="1" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute">
+    <Instance Declaration="#2=R:[CVB.NET.Debugging]CVB.NET.Debugging.Proxies.EnumerableDebugView{T}::#ctor(System.Collections.Generic.IEnumerable{T})@collection" Id="7cdd0f7ce7f4d382">
+      <Target>
+        <JoinPoint Advised="#3=M:[CVB.NET.Debugging]CVB.NET.Debugging.Proxies.EnumerableDebugView{T}::#ctor(System.Collections.Generic.IEnumerable{T})" Advising="#1" Description="#4=Validates the value passed to parameter 'collection'" Ordinal="0" LinesAvoided="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#5=M:[PostSharp.Patterns.Model]PostSharp.Patterns.Contracts.NotNullAttribute::ValidateValue(System.Object, System.String, PostSharp.Reflection.LocationKind, PostSharp.Aspects.LocationValidationContext)" Arguments="#6=2" Description="#7=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+</Symbols>
